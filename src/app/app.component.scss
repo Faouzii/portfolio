@@ -1,0 +1,20 @@
+@import "./../theme/variables/colors.scss";
+@import "./../theme/colors.scss";
+
+.main-section{
+    height: 98vh;
+    background-color: $primary-bg;
+
+}
+
+.section-a{
+    height: 28vh;
+    background-color: $secondary-bg;
+    padding: 3vh 10vw;
+}
+
+.section-b{
+    height: 18vh;
+    background-color: $trinary-bg;
+    padding: 3vh 10vw;
+}
