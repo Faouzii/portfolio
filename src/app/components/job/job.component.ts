@@ -23,6 +23,12 @@ export class JobComponent implements OnInit {
         {name: 'Angular 8'},
         {name: 'Javascript'},
         {name: 'SCSS'},
+      ]},
+      {name : "mission 1 name", stacks : [
+        {name : "JAVA"},
+        {name: 'Angular 8'},
+        {name: 'Javascript'},
+        {name: 'SCSS'},
       ]}
     ]},
     {title : "Lossseerep", company : "Dsdsdsd", missions : [

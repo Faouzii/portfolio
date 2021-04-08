@@ -2,7 +2,7 @@
     <div *ngFor="let job of jobs">
         <mat-step state="plus" completed>
             <ng-template matStepLabel>
-                <span class="fw-800 fs-17">{{job.title}} @ <span class="dark">{{job.company}}</span></span>
+                <span class="fw-800 fs-17 primary">{{job.title}} @ <span class="dark">{{job.company}}</span></span>
             </ng-template>
             <div class="mb-3" *ngFor="let mission of job.missions">
                 <div class="mb-1" fxLayout="row wrap" fxLayoutAlign="none center">
