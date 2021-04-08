@@ -12,11 +12,13 @@ import { CdkStepperModule, STEPPER_GLOBAL_OPTIONS } from '@angular/cdk/stepper';
 import { CdkTreeModule } from '@angular/cdk/tree';
 import { CdkTableModule } from '@angular/cdk/table';
 import {DragDropModule} from '@angular/cdk/drag-drop';
+import { JobComponent } from './components/job/job.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    JobComponent
   ],
   imports: [
     BrowserModule,

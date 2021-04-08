@@ -1,0 +1,25 @@
+<mat-vertical-stepper [linear]="isLinear" #stepper>
+    <div *ngFor="let job of jobs">
+        <mat-step state="plus" completed>
+            <ng-template matStepLabel>
+                <span class="fw-800 fs-17">{{job.title}} @ <span class="dark">{{job.company}}</span></span>
+            </ng-template>
+            <div class="mb-3" *ngFor="let mission of job.missions">
+                <div class="mb-1" fxLayout="row wrap" fxLayoutAlign="none center">
+                    <span class="material-icons primary md-24">check</span>
+                    <span class="fs-16 fw-500 primary" fxFlexAlign="end">{{mission.name}}</span>
+                </div>
+        
+                <mat-chip-list class="example-chip" cdkDropList cdkDropListOrientation="horizontal"
+                    (cdkDropListDropped)="drop($event)">
+                    <mat-chip class="example-box" cdkDrag *ngFor="let stack of mission.stacks">
+                        {{stack.name}}
+                    </mat-chip>
+                </mat-chip-list>
+            </div>
+        </mat-step>
+        <ng-template matStepperIcon="plus">
+            <mat-icon>add</mat-icon>
+        </ng-template>
+   </div>
+   </mat-vertical-stepper>

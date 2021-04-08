@@ -3,6 +3,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { MatHorizontalStepper } from '@angular/material';
 import { Stack } from './models/stack';
 import {CdkDragDrop, moveItemInArray} from '@angular/cdk/drag-drop';
+import { Job } from './models/job';
 
 
 @Component({
@@ -35,6 +36,8 @@ export class AppComponent implements OnInit{
     {name: 'Angular Material'},
     {name: 'PrimeNg'},
   ];
+
+
 
   drop(event: CdkDragDrop<Stack[]>) {
     moveItemInArray(this.vegetables, event.previousIndex, event.currentIndex);
