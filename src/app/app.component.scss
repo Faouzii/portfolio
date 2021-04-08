@@ -8,7 +8,7 @@
 }
 
 .section-a{
-    height: 28vh;
+    //height: 28vh;
     background-color: $secondary-bg;
     padding: 3vh 10vw;
 }
@@ -25,3 +25,33 @@
  height: inherit;
  padding: 8vh 5vw;
 }
+
+
+
+
+.example-headers-align .mat-expansion-panel-header-title,
+.example-headers-align .mat-expansion-panel-header-description {
+  flex-basis: 0;
+}
+
+.example-headers-align .mat-expansion-panel-header-description {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.example-headers-align .mat-form-field + .mat-form-field {
+  margin-left: 8px;
+}
+
+.mat-stepper-horizontal, .mat-stepper-vertical {
+    //background-color: $primary-bg;
+}
+
+
+.example-box.cdk-drag-animating {
+    transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
+  }
+  
+  .example-chip .cdk-drop-list-dragging {
+    transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
+  }
