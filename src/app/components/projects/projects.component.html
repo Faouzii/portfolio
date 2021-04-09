@@ -1,10 +1,68 @@
-<div flexLayout="row wrap" fxLayout.lt-md="column" fxLayoutAlign="space-evenly center" fxLayoutGap="40px" fxLayoutGap.lt-md="0px">
-    <div fxFlex=" calc(40% - 40px)" fxFlex.lt-md="100">
+<div flexLayout="row" fxLayout.lt-md="column" fxLayoutAlign="none center" fxLayoutGap="40px" fxLayoutGap.lt-md="0px"
+    class="my-5">
+    <div fxFlex=" calc(40% - 40px)" fxFlex.lt-md="100" class="h-center">
+        <img src="https://sass-lang.com/assets/img/illustrations/mouse-3f5cd091.svg" alt="" width="340">
+        <h2 class="primary fs-28">Lorem ipsum dolor </h2>
+        <p class="secondary fs-20 fw-500">Lorem ipsum dolor aksoka aplko </p>
+        <button mat-button> <img src="/assets/img/google-play.png" alt="" width="200"></button>
 
     </div>
-    <div fxFlex=" calc(60% - 40px)" fxFlex.lt-md="100" class="h-center">
-        <img src="https://sass-lang.com/assets/img/illustrations/mouse-3f5cd091.svg" alt="" width="300">
-      <h2 class="primary">Lorem ipsum dolor </h2>
-      <p class="secondary fs-20 fw-500">Lorem ipsum dolor aksoka aplko </p>
+    <div fxFlex="calc(60% - 40px)" fxFlex.lt-md="100" class="h-center">
+        <p class="medium fs-20 fw-500"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio quos
+            explicabo,
+            molestias quisquam quis illo ullam similique. Ipsum eos culpa eveniet harum cum,
+            eum aperiam tempore quos, doloremque voluptatum quisquam!
+        </p>
+        <mat-chip-list class="example-chip" cdkDropList cdkDropListOrientation="horizontal"
+            (cdkDropListDropped)="drop($event)">
+            <mat-chip class="example-box" cdkDrag *ngFor="let stack of stacks">
+                {{stack.name}}
+            </mat-chip>
+        </mat-chip-list>
+
+        <div class="mt-5">
+            <button mat-raised-button color="primary" (click)="toggleDisplay(target)">Show more</button>
+        </div>
+
+    </div>
+</div>
+<div #target class="box">
+    <div @slideUpDown *ngIf="showMotivyMeDetails">
+      
+      
+        <div flexLayout="column" fxLayout.lt-md="column" fxLayoutAlign="none center" fxLayoutGap="40px"
+            fxLayoutGap.lt-md="0px" class="my-5">
+            <button mat-raised-button color="primary" (click)="hide()">Hide</button>
+
+
+            <div fxFlex=" calc(30% - 40px)" fxFlex.lt-md="100" class="h-center">
+                <img src="https://sass-lang.com/assets/img/illustrations/mouse-3f5cd091.svg" alt="" width="340">
+            </div>
+            <div fxFlex=" calc(30% - 40px)" fxFlex.lt-md="100" class="h-center">
+                <img src="https://sass-lang.com/assets/img/illustrations/mouse-3f5cd091.svg" alt="" width="340">
+            </div>
+            <div fxFlex=" calc(30% - 40px)" fxFlex.lt-md="100" class="h-center">
+                <img src="https://sass-lang.com/assets/img/illustrations/mouse-3f5cd091.svg" alt="" width="340">
+            </div>
+
+
+        </div>
+        <div flexLayout="column" fxLayout.lt-md="column" fxLayoutAlign="none center" fxLayoutGap="40px"
+        fxLayoutGap.lt-md="0px" class="my-5">
+        <button mat-raised-button color="primary" (click)="hide()">Hide</button>
+
+
+        <div fxFlex=" calc(30% - 40px)" fxFlex.lt-md="100" class="h-center">
+            <img src="https://sass-lang.com/assets/img/illustrations/mouse-3f5cd091.svg" alt="" width="340">
+        </div>
+        <div fxFlex=" calc(30% - 40px)" fxFlex.lt-md="100" class="h-center">
+            <img src="https://sass-lang.com/assets/img/illustrations/mouse-3f5cd091.svg" alt="" width="340">
+        </div>
+        <div fxFlex=" calc(30% - 40px)" fxFlex.lt-md="100" class="h-center">
+            <img src="https://sass-lang.com/assets/img/illustrations/mouse-3f5cd091.svg" alt="" width="340">
+        </div>
+
+
+    </div>
     </div>
 </div>
