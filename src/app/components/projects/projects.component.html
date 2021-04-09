@@ -1,4 +1,4 @@
-<div flexLayout="row" fxLayout.lt-md="column" fxLayoutAlign="none center" fxLayoutGap="40px" fxLayoutGap.lt-md="0px"
+<div #base flexLayout="row" fxLayout.lt-md="column" fxLayoutAlign="none center" fxLayoutGap="40px" fxLayoutGap.lt-md="0px"
     class="my-5">
     <div fxFlex=" calc(40% - 40px)" fxFlex.lt-md="100" class="h-center">
         <img src="https://sass-lang.com/assets/img/illustrations/mouse-3f5cd091.svg" alt="" width="340">
@@ -32,7 +32,7 @@
       
         <div flexLayout="column" fxLayout.lt-md="column" fxLayoutAlign="none center" fxLayoutGap="40px"
             fxLayoutGap.lt-md="0px" class="my-5">
-            <button mat-raised-button color="primary" (click)="hide()">Hide</button>
+            <button mat-raised-button color="primary" (click)="hide(base)">Hide</button>
 
 
             <div fxFlex=" calc(30% - 40px)" fxFlex.lt-md="100" class="h-center">
@@ -49,7 +49,7 @@
         </div>
         <div flexLayout="column" fxLayout.lt-md="column" fxLayoutAlign="none center" fxLayoutGap="40px"
         fxLayoutGap.lt-md="0px" class="my-5">
-        <button mat-raised-button color="primary" (click)="hide()">Hide</button>
+        <button mat-raised-button color="primary" (click)="hide(base)">Hide</button>
 
 
         <div fxFlex=" calc(30% - 40px)" fxFlex.lt-md="100" class="h-center">

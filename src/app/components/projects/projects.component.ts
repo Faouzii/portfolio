@@ -34,7 +34,10 @@ export class ProjectsComponent implements OnInit {
     },100);
   }
 
-  hide(){
+  hide(el : HTMLElement){
     this.showMotivyMeDetails = false;
+    setTimeout(() => {
+      el.scrollIntoView({behavior: 'smooth'});
+    },500);
   }
 }
