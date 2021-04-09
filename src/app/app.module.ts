@@ -13,12 +13,14 @@ import { CdkTreeModule } from '@angular/cdk/tree';
 import { CdkTableModule } from '@angular/cdk/table';
 import {DragDropModule} from '@angular/cdk/drag-drop';
 import { JobComponent } from './components/job/job.component';
+import { ProjectsComponent } from './components/projects/projects.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    JobComponent
+    JobComponent,
+    ProjectsComponent
   ],
   imports: [
     BrowserModule,
