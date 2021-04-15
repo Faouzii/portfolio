@@ -1,60 +1,46 @@
-<section class="main-section">
-  <div fxLayout="row wrap" fxLayout.lt-md="column" fxLayoutAlign="space-evenly center" fxLayoutGap="30px"
-    fxLayoutGap.lt-md="0px" class="main-flex-container">
 
-    <div fxFlex=" calc(50% - 60px)" fxFlex.lt-md="100" class="h-center">
-      <img src="https://sass-lang.com/assets/img/illustrations/mouse-3f5cd091.svg" alt="" width="300">
-      <h2 class="primary">Lorem ipsum dolor </h2>
-      <p class="secondary fs-20 fw-500">Lorem ipsum dolor aksoka aplko </p>
+<div (scroll)="onWindowScroll($event);">
+  
+ <section class="main-section" >
+    <div fxLayout="row wrap" fxLayout.lt-md="column" fxLayoutAlign="space-evenly center" fxLayoutGap="30px"
+      fxLayoutGap.lt-md="0px" class="main-flex-container">
+  
+      <div fxFlex=" calc(50% - 60px)" fxFlex.lt-md="100" class="h-center">
+        <img src="https://sass-lang.com/assets/img/illustrations/mouse-3f5cd091.svg" alt="" width="300">
+        <h2 class="primary">Lorem ipsum dolor </h2>
+        <p class="secondary fs-20 fw-500">Lorem ipsum dolor aksoka aplko </p>
+      </div>
+  
+  
+      <div fxFlex=" calc(50% - 60px)" fxFlex.lt-md="100">
+        <p class="fs-20 fw-500 secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio qui laborum,
+          nostrum aut quas odio explicabo sint et error assumenda molestiae in quae quis hic suscipit ex aliquam nesciunt
+          molestias?
+          et error assumenda molestiae in quae quis hic suscipit ex aliquam nesciunt molestias?
+        </p>
+      </div>
     </div>
-
-
-    <div fxFlex=" calc(50% - 60px)" fxFlex.lt-md="100">
-      <p class="fs-20 fw-500 secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio qui laborum,
-        nostrum aut quas odio explicabo sint et error assumenda molestiae in quae quis hic suscipit ex aliquam nesciunt
-        molestias?
-        et error assumenda molestiae in quae quis hic suscipit ex aliquam nesciunt molestias?
-      </p>
+  
+   
+  </section>
+  <header (scrollToSection)="scroll($event)"></header>
+  
+  <section class="section-a" #jobs >
+    <div>
+      <h2 class="primary">sboj</h2>
     </div>
-  </div>
-
-  <!--<div fxLayout="row wrap" fxLayout.lt-md="column" fxLayoutAlign="space-between center" fxLayoutGap="30px"
-  fxLayoutGap.lt-md="0px" >
-
-  <div fxFlex=" calc(25% - 30px)" fxFlex.lt-md="100" class="h-center">
-    <button mat-raised-button>Stack </button>
-  </div>
-  <div fxFlex=" calc(25% - 30px)" fxFlex.lt-md="100" class="h-center">
-    <button mat-raised-button>Github</button>
-  </div>
-  <div fxFlex=" calc(25% - 30px)" fxFlex.lt-md="100" class="h-center">
-    <button mat-raised-button>LinkedIn</button>
-  </div>
-  <div fxFlex=" calc(25% - 30px)" fxFlex.lt-md="100" class="h-center">
-    <button mat-raised-button>aa</button>
-  </div>
-
+    <div>
+      <jobs></jobs>
+    </div>
+  </section>
+  
+  <section class="section-b" #projects>
+    <h2 class="primary my-4">Lorems</h2>
+    <projects></projects>
+  </section>
+  
+  <section class="section-a" #skills>
+    <h2 class="primary my-4">Skills</h2>
+    <skills></skills>
+  </section>
 </div>
--->
-
-</section>
-
-<section class="section-a">
-  <div>
-    <h2 class="primary">Lorems</h2>
-  </div>
-
-  <div>
-    <jobs></jobs>
-  </div>
-</section>
-
-<section class="section-b">
-  <h2 class="primary my-4">Lorems</h2>
-  <projects></projects>
-</section>
-
-<section class="section-a">
-  <h2 class="primary my-4">Skills</h2>
-  <skills></skills>
-</section>

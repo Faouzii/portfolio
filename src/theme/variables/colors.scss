@@ -1,3 +1,7 @@
+@import '~@angular/material/theming';
+@include mat-core();
+
+
 $primary : #5d9bf8;
 $secondary : #ffffff;
 $trinary : #d9e8f8;
@@ -15,3 +19,10 @@ $trinary-bg : rgba($trinary, 0.8);
 $transparent-bg: rgba(#dee3ec00, 0.8);
 $light-bg: rgba($light, 0.8);
 $medium-bg: rgba($medium, 0.8);
+
+
+$my-app-primary: mat-palette($mat-blue-grey);
+$my-app-accent:  mat-palette($mat-pink, 500, 900, A100);
+$my-app-warn:    mat-palette($mat-deep-orange);
+$my-app-theme: mat-light-theme($my-app-primary, $my-app-accent, $my-app-warn);
+@include angular-material-theme($my-app-theme);

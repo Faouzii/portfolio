@@ -5,7 +5,7 @@ import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatButtonModule, MatCardModule, MatChipsModule, MatDatepickerModule, MatExpansionModule, MatFormFieldModule, MatGridListModule, MatGridTile, MatIconModule, MatInputModule, MatLabel, MatSliderModule, MatStepperModule } from '@angular/material';
+import { MatButtonModule, MatCardModule, MatChipsModule, MatDatepickerModule, MatExpansionModule, MatFormFieldModule, MatGridListModule, MatGridTile, MatIconModule, MatInputModule, MatLabel, MatSidenavModule, MatSliderModule, MatStepperModule, MatToolbarModule } from '@angular/material';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { FormBuilder, ReactiveFormsModule } from '@angular/forms';
 import { CdkStepperModule, STEPPER_GLOBAL_OPTIONS } from '@angular/cdk/stepper';
@@ -16,6 +16,7 @@ import { JobComponent } from './components/job/job.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { SkillsComponent } from './components/skills/skills.component';
 import { ContributionsComponent } from './components/contributions/contributions.component';
+import { HeaderComponent } from './components/header/header.component';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { ContributionsComponent } from './components/contributions/contributions
     JobComponent,
     ProjectsComponent,
     SkillsComponent,
-    ContributionsComponent
+    ContributionsComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
@@ -45,7 +47,10 @@ import { ContributionsComponent } from './components/contributions/contributions
     CdkTableModule,
     CdkTreeModule,
     MatChipsModule,
-    DragDropModule
+    DragDropModule,
+    MatToolbarModule,
+    MatSidenavModule
+  
   ],
   providers: [
     FormBuilder, 

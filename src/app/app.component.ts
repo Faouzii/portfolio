@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, HostListener, OnInit, ViewChild } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { MatHorizontalStepper } from '@angular/material';
 import { Stack } from './models/stack';
@@ -11,9 +11,20 @@ import { Job } from './models/job';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent implements OnInit{
+export class AppComponent implements OnInit {
 
 
+
+  @HostListener('window:scroll', ['$event'])
+  onWindowScroll(e) {
+     if (window.pageYOffset > 780) {
+       let element = document.getElementById('navbar');
+       element.classList.add('sticky');
+     } else {
+      let element = document.getElementById('navbar');
+        element.classList.remove('sticky'); 
+     }
+  }
 
   title = 'portfolio';
 
@@ -42,6 +53,11 @@ export class AppComponent implements OnInit{
   drop(event: CdkDragDrop<Stack[]>) {
     moveItemInArray(this.vegetables, event.previousIndex, event.currentIndex);
   }
+
+  scroll(elmentId: string) {
+     const element = document.querySelector(elmentId)
+    if (element) element.scrollIntoView({ behavior: 'smooth'})
+}
 
 
 }
