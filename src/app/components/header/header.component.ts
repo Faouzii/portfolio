@@ -1,4 +1,4 @@
-import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter, Input } from '@angular/core';
 
 @Component({
   selector: 'header',
@@ -7,10 +7,13 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
+  //Data to send to parent
   @Output() public sidenavToggle = new EventEmitter();
-
   @Output() scrollToSection = new EventEmitter();
   
+  //data received by the parent
+  @Input() currentActiveTab : string;
+
   constructor() { }
 
   ngOnInit() {

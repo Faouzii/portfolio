@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, HostListener, OnInit, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, HostListener, OnInit, ViewChild } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { MatHorizontalStepper } from '@angular/material';
 import { Stack } from './models/stack';
@@ -11,9 +11,61 @@ import { Job } from './models/job';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent implements OnInit {
+export class AppComponent implements OnInit, AfterViewInit {
+
+  @ViewChild('jobs', {static : false}) jobsElement: ElementRef;
+  @ViewChild('projects', {static : false}) projectsElement: ElementRef;
+  @ViewChild('skills', {static : false}) skillsElement: ElementRef;
+  @ViewChild('about', {static : false}) aboutElement: ElementRef;
+
+  public currentActive = "main";
+  public jobsOffset: Number = null;
+  public projectsOffset: Number = null;
+  public skillsOffset: Number = null;
+  public aboutOffset: Number = null;
+
+  isLinear = false;
+
+  constructor() {}
+
+  ngOnInit() {
+  }
 
 
+  ngAfterViewInit() {
+    this.jobsOffset = this.jobsElement.nativeElement.offsetTop;
+    this.projectsOffset = this.projectsElement.nativeElement.offsetTop;
+    this.skillsOffset = this.skillsElement.nativeElement.offsetTop;
+    this.aboutOffset = this.aboutElement.nativeElement.offsetTop;
+  }
+
+  scrollToElement() {
+    // scrollToElement Code :)
+  }
+
+ // @HostListener('window:scroll', ['$event'])
+  checkOffsetTop() {
+    if (window.pageYOffset >= this.jobsOffset && window.pageYOffset < this.projectsOffset) {
+      this.currentActive = "jobs";
+      console.log("jobsOffset")
+
+    } else if (window.pageYOffset >= this.projectsOffset && window.pageYOffset < this.skillsOffset) {
+      this.currentActive = "projects";
+      console.log("jobsOffset")
+    } else if (window.pageYOffset >= this.skillsOffset && window.pageYOffset < this.aboutOffset) {
+      this.currentActive = "skills";
+      console.log("skillsOffset")
+
+    } else if (window.pageYOffset >= this.aboutOffset) {
+      this.currentActive = "about";
+      console.log("aboutOffset")
+
+    } else {
+      this.currentActive = "main";
+      console.log("22222222222")
+    }
+  }
+  
 
   @HostListener('window:scroll', ['$event'])
   onWindowScroll(e) {
@@ -24,37 +76,17 @@ export class AppComponent implements OnInit {
       let element = document.getElementById('navbar');
         element.classList.remove('sticky'); 
      }
-  }
 
-  title = 'portfolio';
-
-  isLinear = false;
-
-
-  constructor() {}
-
-  ngOnInit() {
-    
-
+    this.checkOffsetTop();
 
   }
 
-  vegetables: Stack[] = [
-    {name: 'JAVA 8'},
-    {name: 'Angular 8'},
-    {name: 'Javascript'},
-    {name: 'SCSS'},
-    {name: 'Angular Material'},
-    {name: 'PrimeNg'},
-  ];
+
+  
 
 
 
-  drop(event: CdkDragDrop<Stack[]>) {
-    moveItemInArray(this.vegetables, event.previousIndex, event.currentIndex);
-  }
-
-  scroll(elmentId: string) {
+   scroll(elmentId: string) {
      const element = document.querySelector(elmentId)
     if (element) element.scrollIntoView({ behavior: 'smooth'})
 }

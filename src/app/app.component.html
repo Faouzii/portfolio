@@ -23,7 +23,7 @@
   
    
   </section>
-  <header (scrollToSection)="scroll($event)"></header>
+  <header (scrollToSection)="scroll($event)" [currentActiveTab]="currentActive"></header>
   
   <section class="section-a" #jobs >
     <div>
@@ -41,6 +41,11 @@
   
   <section class="section-a" #skills>
     <h2 class="primary my-4">Skills</h2>
+    <skills></skills>
+  </section>
+
+  <section class="section-a" #about>
+    <h2 class="primary my-4">About</h2>
     <skills></skills>
   </section>
 </div>
