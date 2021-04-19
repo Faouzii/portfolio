@@ -34,4 +34,8 @@ export class ContactComponent implements OnInit {
    
   }
 
+  submitMail(){
+    
+  }
+
 }
