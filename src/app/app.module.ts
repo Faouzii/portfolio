@@ -7,7 +7,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule, MatCardModule, MatChipsModule, MatDatepickerModule, MatExpansionModule, MatFormFieldModule, MatGridListModule, MatGridTile, MatIconModule, MatInputModule, MatLabel, MatSidenavModule, MatSliderModule, MatStepperModule, MatToolbarModule } from '@angular/material';
 import { FlexLayoutModule } from '@angular/flex-layout';
-import { FormBuilder, ReactiveFormsModule } from '@angular/forms';
+import { FormBuilder, FormsModule, NgControl, ReactiveFormsModule } from '@angular/forms';
 import { CdkStepperModule, STEPPER_GLOBAL_OPTIONS } from '@angular/cdk/stepper';
 import { CdkTreeModule } from '@angular/cdk/tree';
 import { CdkTableModule } from '@angular/cdk/table';
@@ -51,11 +51,14 @@ import { ContactComponent } from './components/contact/contact.component';
     MatChipsModule,
     DragDropModule,
     MatToolbarModule,
-    MatSidenavModule
+    MatSidenavModule,
+    MatFormFieldModule,
+    FormsModule
   
   ],
   providers: [
     FormBuilder, 
+  
     {
       provide: STEPPER_GLOBAL_OPTIONS, useValue: {displayDefaultIndicatorType: false}
     }
