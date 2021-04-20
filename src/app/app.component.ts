@@ -33,10 +33,10 @@ export class AppComponent implements OnInit, AfterViewInit {
 
 
   ngAfterViewInit() {
-    this.jobsOffset = this.jobsElement.nativeElement.offsetTop;
-    this.projectsOffset = this.projectsElement.nativeElement.offsetTop;
-    this.skillsOffset = this.skillsElement.nativeElement.offsetTop;
-    this.aboutOffset = this.aboutElement.nativeElement.offsetTop;
+    this.jobsOffset = this.jobsElement.nativeElement.offsetTop -240;
+    this.projectsOffset = this.projectsElement.nativeElement.offsetTop - 240;
+    this.skillsOffset = this.skillsElement.nativeElement.offsetTop - 240;
+    this.aboutOffset = this.aboutElement.nativeElement.offsetTop -240;
   }
 
   scrollToElement() {
@@ -49,9 +49,9 @@ export class AppComponent implements OnInit, AfterViewInit {
       this.currentActive = "jobs";
       console.log("jobsOffset")
 
-    } else if (window.pageYOffset >= this.projectsOffset && window.pageYOffset < this.skillsOffset) {
+    } else if (window.pageYOffset >= this.projectsOffset  && window.pageYOffset  < this.skillsOffset) {
       this.currentActive = "projects";
-      console.log("jobsOffset")
+      console.log("project")
     } else if (window.pageYOffset >= this.skillsOffset && window.pageYOffset < this.aboutOffset) {
       this.currentActive = "skills";
       console.log("skillsOffset")
@@ -82,13 +82,9 @@ export class AppComponent implements OnInit, AfterViewInit {
   }
 
 
-  
-
-
-
    scroll(elmentId: string) {
      const element = document.querySelector(elmentId)
-    if (element) element.scrollIntoView({ behavior: 'smooth'})
+    if (element) element.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'start' } )
 }
 
 
