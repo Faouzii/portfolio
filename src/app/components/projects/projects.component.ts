@@ -40,4 +40,8 @@ export class ProjectsComponent implements OnInit {
       el.scrollIntoView({behavior: 'smooth'});
     },500);
   }
+
+  drop(event){
+    
+  }
 }

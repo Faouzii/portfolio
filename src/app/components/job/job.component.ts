@@ -48,4 +48,8 @@ export class JobComponent implements OnInit {
     {name: 'Angular Material'},
     {name: 'PrimeNg'},
   ];
+
+  drop(event){
+    
+  }
 }
