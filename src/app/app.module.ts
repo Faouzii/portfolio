@@ -19,6 +19,8 @@ import { ContributionsComponent } from './components/contributions/contributions
 import { HeaderComponent } from './components/header/header.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { TestComponent } from './components/test/test.component';
+import { AboutComponent } from './components/about/about.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 
 @NgModule({
@@ -30,7 +32,9 @@ import { TestComponent } from './components/test/test.component';
     ContributionsComponent,
     HeaderComponent,
     ContactComponent,
-    TestComponent
+    TestComponent,
+    AboutComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

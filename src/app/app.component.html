@@ -2,33 +2,27 @@
 <div (scroll)="onWindowScroll($event);">
   
  <section class="main-section" >
-    <div fxLayout="row wrap" fxLayout.lt-md="column" fxLayoutAlign="space-evenly center" fxLayoutGap="30px"
-      fxLayoutGap.lt-md="0px" class="main-flex-container">
-  
-      <div fxFlex=" calc(50% - 60px)" fxFlex.lt-md="100" class="h-center">
-        <img src="https://sass-lang.com/assets/img/illustrations/mouse-3f5cd091.svg" alt="" width="300">
-        <h2 class="primary">Lorem ipsum dolor </h2>
-        <p class="secondary fs-20 fw-500">Lorem ipsum dolor aksoka aplko </p>
-      </div>
-  
-  
-      <div fxFlex=" calc(50% - 60px)" fxFlex.lt-md="100">
-        <p class="fs-20 fw-500 secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio qui laborum,
-          nostrum aut quas odio explicabo sint et error assumenda molehehe for timmoc ic suscipit ex aliquam nesciunt
-          molestias?
-          et error assumenda molestiae in quae quis hic suscipit ex aliquam nesciunt molestias?
-        </p>
-      </div>
-    </div>
+   gg
   
    
   </section>
   <header (scrollToSection)="scroll($event)" [currentActiveTab]="currentActive"></header>
-  <app-test></app-test>
+  
   <!--
+    <app-test></app-test>
+-->
+<section class="section-b" #about >
+  <div class="h-center">
+    <h1 class="primary fs-40">About</h1>
+  </div>
+  <div>
+    <about></about>
+  </div>
+</section>
+
   <section class="section-a" #jobs >
-    <div>
-      <h2 class="primary">sboj</h2>
+    <div class="h-center">
+      <h1 class="primary fs-40">sboj</h1>
     </div>
     <div>
       <jobs></jobs>
@@ -45,14 +39,14 @@
     <skills></skills>
   </section>
 
-  <section class="section-b" #about>
-    <h2 class="primary my-4">About</h2>
-    <skills></skills>
-  </section>
 
-  <section class="section-a" #contact>
+  <section class="section-b" #contact>
     <h2 class="primary my-4">Contact</h2>
     <contact></contact>
   </section>
--->
+
+  <section>
+    <footer></footer>
+
+  </section>
 </div>
