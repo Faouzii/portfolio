@@ -19,6 +19,9 @@
         <li>
             <a  (click)="sendDataToParent('skills')" [ngClass]="{'active' : currentActiveTab === 'skills'}">Skills</a>
           </li>
+          <li>
+            <a  (click)="sendDataToParent('contact')" [ngClass]="{'active' : currentActiveTab === 'contact'}">Contact</a>
+          </li>
       </ul>
     </div>
   </mat-toolbar>

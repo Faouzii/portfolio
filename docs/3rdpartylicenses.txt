@@ -112,8 +112,6 @@ THE SOFTWARE.
 
 @angular/material/button
 
-@angular/material/chips
-
 @angular/material/datepicker
 
 @angular/material/dialog
@@ -122,7 +120,7 @@ THE SOFTWARE.
 
 @angular/material/icon
 
-@angular/material/stepper
+@angular/material/snack-bar
 
 @angular/material/toolbar
 

@@ -17,7 +17,7 @@ export class JobComponent implements OnInit {
   }
 
   jobs : Job [] = [
-    {title : "Loeerep", company : "Dsdsdsd", missions : [
+    {title : "Full Stack Software Engineer", company : "EURAFRIC Information", date : "Nov 2020 - Current" , missions : [
       {name : "mission 1 name", stacks : [
         {name : "JAVA"},
         {name: 'Angular 8'},
@@ -31,7 +31,24 @@ export class JobComponent implements OnInit {
         {name: 'SCSS'},
       ]}
     ]},
-    {title : "Lossseerep", company : "Dsdsdsd", missions : [
+
+    {title : "Full Stack Software Engineer", company : "SafeDemat", date : "Sep 2019 - Oct 2020", missions : [
+      {name : "mission 2 name", stacks : [
+        {name : "JAVA"},
+        {name: 'PrimeNg'},
+        {name: 'Angular Material'},
+      ]}
+    ]},
+
+    {title : "Full Stack Software Engineer Intern", company : "SafeDemat", date : "Sep 2019 - Oct 2020", missions : [
+      {name : "mission 2 name", stacks : [
+        {name : "JAVA"},
+        {name: 'PrimeNg'},
+        {name: 'Angular Material'},
+      ]}
+    ]},
+    
+    {title : "Summer Intern", company : "SafeDemat", date : "Sep 2019 - Oct 2020", missions : [
       {name : "mission 2 name", stacks : [
         {name : "JAVA"},
         {name: 'PrimeNg'},

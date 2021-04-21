@@ -5,7 +5,7 @@ import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatButtonModule, MatCardModule, MatChipsModule, MatDatepickerModule, MatExpansionModule, MatFormFieldModule, MatGridListModule, MatGridTile, MatIconModule, MatInputModule, MatLabel, MatSidenavModule, MatSliderModule, MatStepperModule, MatToolbarModule } from '@angular/material';
+import { MatButtonModule, MatCardModule, MatChipsModule, MatDatepickerModule, MatExpansionModule, MatFormFieldModule, MatGridListModule, MatGridTile, MatIconModule, MatInputModule, MatLabel, MatSidenavModule, MatSliderModule, MatSnackBarModule, MatStepperModule, MatToolbarModule } from '@angular/material';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { FormBuilder, FormsModule, NgControl, ReactiveFormsModule } from '@angular/forms';
 import { CdkStepperModule, STEPPER_GLOBAL_OPTIONS } from '@angular/cdk/stepper';
@@ -18,6 +18,7 @@ import { SkillsComponent } from './components/skills/skills.component';
 import { ContributionsComponent } from './components/contributions/contributions.component';
 import { HeaderComponent } from './components/header/header.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { TestComponent } from './components/test/test.component';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import { ContactComponent } from './components/contact/contact.component';
     SkillsComponent,
     ContributionsComponent,
     HeaderComponent,
-    ContactComponent
+    ContactComponent,
+    TestComponent
   ],
   imports: [
     BrowserModule,
@@ -53,7 +55,8 @@ import { ContactComponent } from './components/contact/contact.component';
     MatToolbarModule,
     MatSidenavModule,
     MatFormFieldModule,
-    FormsModule
+    FormsModule,
+    MatSnackBarModule
   
   ],
   providers: [
