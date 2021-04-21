@@ -16,7 +16,7 @@
 
 .section-b{
     background-color: $trinary-bg;
-    padding: 5vh 10vw;
+    padding: 6vh 10vw;
 }
 
 .main-flex-container{
@@ -27,7 +27,7 @@
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .section-b,.section-a{
-    padding: 5vh 3vw;
+    padding: 9vh 3vw;
   }
 } 
 
