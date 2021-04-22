@@ -26,11 +26,11 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
   /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-    h1,h2,h3,h4,h5, .fs-17,  .fs-20{
-        font-size: 0.9em;
-    }
-    .fs-40,.fs-50{
-        font-size: 25px;
+    h1,h2,h3,h4,h5{
+        font-size: 1.0em;
+    } 
+    .mat-vertical-stepper-header{
+        padding : 20px 5px !important;
     }
 } 
 
@@ -47,3 +47,8 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {}
+
+
+
+  
+  
