@@ -21,8 +21,12 @@ $light-bg: rgba($light, 0.8);
 $medium-bg: rgba($medium, 0.8);
 
 
+
+
 $my-app-primary: mat-palette($mat-blue-grey);
 $my-app-accent:  mat-palette($mat-pink, 500, 900, A100);
 $my-app-warn:    mat-palette($mat-deep-orange);
 $my-app-theme: mat-light-theme($my-app-primary, $my-app-accent, $my-app-warn);
 @include angular-material-theme($my-app-theme);
+
+//# 3d5a80 #98C1D9  #E0FBFC   #EE6C4D  #293241
