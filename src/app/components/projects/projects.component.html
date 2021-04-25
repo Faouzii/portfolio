@@ -3,12 +3,12 @@
     <div  #base flexLayout="row" fxLayout.lt-md="column" fxLayoutAlign="none center" fxLayoutGap="40px" fxLayoutGap.lt-md="0px" class="my-5">
         <div *ngIf="!project.reveresed" fxFlex=" calc(40% - 40px)" fxFlex.lt-md="100" class="h-center">
             <img [src]="project.logo" alt="" class="project-logo">
-            <button mat-button> <img src="/assets/img/google-play.png" alt="" width="200"></button>
+            <button mat-button> <img src="/assets/img/google-play.png" alt="" width="180"></button>
         </div>
 
         <div *ngIf="project.reveresed" fxHide fxShow.lt-md="true" fxFlex=" calc(40% - 40px)" fxFlex.lt-md="100" class="h-center">
             <img [src]="project.logo" alt="" class="project-logo">
-            <button mat-button> <img src="/assets/img/google-play.png" alt="" width="200"></button>
+            <button mat-button> <img src="/assets/img/google-play.png" alt="" width="120"></button>
         </div>
     
         <div fxFlex="calc(60% - 40px)" fxFlex.lt-md="100" class="">
