@@ -4,9 +4,9 @@
 .main-section{
   height: 93vh;
   background-image:linear-gradient(
-    to right bottom, 
-    rgba($primary, 0.8), 
-    rgba($secondary, 0.8)), 
+    to  bottom, 
+    rgba($secondary, 0.8), 
+    rgba($primary-bg, 1)), 
     url(../assets/img/main-bg.jpg);
   background-size: cover;
   background-position: top;
@@ -48,7 +48,7 @@
 
 .heading-box{
   position: absolute;
-  top: 40%;
+  top: 50%;
   left: 50% ;
   transform: translate(-50%, -50%);
 }

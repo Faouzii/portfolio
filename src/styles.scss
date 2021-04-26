@@ -23,6 +23,9 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
  .material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
 
 
+ .mat-vertical-content{
+    padding-bottom: 0px !important;
+}
 
   /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
@@ -35,6 +38,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     .mat-vertical-content-container{
         margin-left: 18px !important;
     }
+    
 } 
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
