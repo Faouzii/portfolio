@@ -22,22 +22,31 @@ export class ProjectsComponent implements OnInit {
     {
       reveresed : false,
       logo : "../../assets/img/anawcoloc-logo.png",
-      title : "MotivyMe Self motivation..",
-      description : "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio quos explicab olestias quisquam quis illo ullam similique. Ipsum eos culpa eveniet harum cum, eum aperiam tempore quos, doloremque voluptatum quisquam!",
-      googlePlayUrl : "https",
+      title : "Ana w Coloc : Shared Expenses Management",
+      description : "Ana w l'coloc is a 100% Moroccan application, 100% free and without ads, which allows you to manage the expenses shared between roommates, friends, family ... in order to facilitate daily life.",
+      googlePlayUrl : "https://play.google.com/store/apps/details?id=me.faouzi.mobile.anawcoloc",
       stacks : [
-        {name : "ionic 5"}
+        {name : "ionic 5"},
+        {name : "Angular 8"},
+        {name : "Java 8"},
+        {name : "Spring boot"},
+        {name : "PostgreSQL"},
+
       ]
     },
 
     {
       reveresed : true,
       logo : "../../assets/img/motivyme-logo.png",
-      title : "Ana w coloc..",
-      description : "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio quos explicabo",
-      googlePlayUrl : "https",
+      title : "Do it, Self Motivation Aapp",
+      description : "Self motivation app that helps you achieve your goals, by scheduling your day-to-day / weekly tasks, and get rewarded for doing them",
+      googlePlayUrl : "https://play.google.com/store/apps/details?id=my.awesome.doit.app.by.faouzi",
       stacks : [
-        {name : "ionic 5"}
+        {name : "ionic 5"},
+        {name : "Angular 8"},
+        {name : "Java 8"},
+        {name : "Spring boot"},
+        {name : "PostgreSQL"},
       ]
     }
   ]
