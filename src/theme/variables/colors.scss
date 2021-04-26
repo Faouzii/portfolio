@@ -2,31 +2,108 @@
 @include mat-core();
 
 
-$primary : #3d5a80;
-$secondary : #ffffff;
-$trinary : #d9e8f8;
-
-$info : #73ece6;
-$light : #f5f7ea;
-$dark : #ab73ec;
-$medium : #8d8db9;
+$primary : #293241;
+$secondary : #3d5a80;
+$trinary : #E0FBFC;
+$info : #98C1D9;
+$medium : #EE6C4D;
 
 
+$light : #ffffff;
+$dark : #b7b6bd;
 
-$primary-bg : rgba($primary, 0.5);
-$secondary-bg: rgba($secondary, 0.8);
-$trinary-bg : rgba($trinary, 0.8);
-$transparent-bg: rgba(#dee3ec00, 0.8);
-$light-bg: rgba($light, 0.8);
-$medium-bg: rgba($medium, 0.8);
+$app-primary: (
+  50: #424f64,
+  100: $primary,
+  200: #2e3a50,
+  300: $primary,
+  400: $primary,
+  500: $primary,
+  600: $primary,
+  700: $primary,
+  800: $primary,
+  900: $primary,
+  A100: $primary,
+  A200: $primary,
+  A400: $primary,
+  A700: $primary,
+  contrast: (
+    50: white,
+    100: white,
+    200: white,
+    300: white,
+    400: white,
+    500: white,
+    600: white,
+    700: white,
+    800: white,
+    900: white,
+    A100: white,
+    A200: white,
+    A400: white,
+    A700: white,
+  )
+);
 
+$app-accent: (
+  50: #98C1D9,
+  100: #a3cce4,
+  200: #78a9c5,
+  300: #98C1D9,
+  400: #98C1D9,
+  500: #98C1D9,
+  600: #98C1D9,
+  700: #98C1D9,
+  800: #98C1D9,
+  900: #98C1D9,
+  A100: #98C1D9,
+  A200: #98C1D9,
+  A400: #98C1D9,
+  A700: #98C1D9,
+  contrast: (
+    50: white,
+    100: white,
+    200: white,
+    300: white,
+    400: white,
+    500: white,
+    600: white,
+    700: white,
+    800: white,
+    900: white,
+    A100: white,
+    A200: white,
+    A400: white,
+    A700: white,
+  )
+);
 
-
-
-$my-app-primary: mat-palette($mat-blue-grey);
+$my-app-primary: mat-palette($app-primary);
 $my-app-accent:  mat-palette($mat-pink, 500, 900, A100);
 $my-app-warn:    mat-palette($mat-deep-orange);
 $my-app-theme: mat-light-theme($my-app-primary, $my-app-accent, $my-app-warn);
 @include angular-material-theme($my-app-theme);
 
+
+
+$primary-bg : rgba($primary, 0.8);
+$secondary-bg: rgba($secondary, 0.8);
+$trinary-bg : rgba($trinary, 0.8);
+$transparent-bg: rgba(#dee3ec00, 0.8);
+$light-bg: rgba($light, 0.8);
+$medium-bg: rgba($medium, 0.8);
+$info-bg: rgba($info, 0.8);
+$dark-bg: rgba($dark, 0.8);
+
+$primary-bg-100 : rgba($primary, 1);
+$secondary-bg-100: rgba($secondary, 1);
+$trinary-bg-100 : rgba($trinary, 1);
+$transparent-bg-100: rgba(#dee3ec00, 1);
+$light-bg-100: rgba($light, 1);
+$medium-bg-100: rgba($medium, 1);
+$info-bg-100: rgba($info, 1);
+
 //# 3d5a80 #98C1D9  #E0FBFC   #EE6C4D  #293241
+
+
+

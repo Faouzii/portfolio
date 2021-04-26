@@ -2,19 +2,16 @@
 @import "./../theme/colors.scss";
 
 .main-section{
-    height: 93vh;
-   // background-color: $primary-bg;
-  //  overflow-y: scroll;
-   // overflow-x: hidden;
+  height: 93vh;
   background-image:linear-gradient(
     to right bottom, 
-    rgba(128, 214, 113, 0.8), 
-    rgba(39, 180, 133, 0.8)), 
+    rgba($primary, 0.8), 
+    rgba($secondary, 0.8)), 
     url(../assets/img/main-bg.jpg);
   background-size: cover;
   background-position: top;
 
-  clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+  //clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
 
   position: relative;
 }
@@ -71,12 +68,12 @@
 
 
 .section-a{
-    background-color: $secondary-bg;
+    background-color: $light-bg;
     padding: 5vh 10vw;
 }
 
 .section-b{
-    background-color: $trinary-bg;
+    background-color: $info-bg;
     padding: 6vh 10vw;
 }
 
