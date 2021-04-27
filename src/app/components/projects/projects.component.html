@@ -1,7 +1,5 @@
 <div *ngFor="let project of projects">
-
-    <div  #base flexLayout="row" fxLayout.lt-md="column" fxLayoutAlign="none center" fxLayoutGap="40px" fxLayoutGap.lt-md="0px" class="my-5">
-
+    <div #base flexLayout="row" fxLayout.lt-md="column" fxLayoutAlign="none center" fxLayoutGap="40px" fxLayoutGap.lt-md="0px" class="my-5">
         <div *ngIf="!project.reveresed" fxFlex=" calc(40% - 40px)" fxFlex.lt-md="100" class="h-center">
             <img [src]="project.logo" alt="" class="project-logo">
             <br><br>

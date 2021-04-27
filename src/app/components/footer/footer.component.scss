@@ -1,6 +1,18 @@
 @import "./../../../theme/variables/colors.scss";
 
 .footer{
+    padding: 0;
     height: 20vh;
-    background-color: $primary-bg-100;
+    background-color: $primary;
+    color: white;
 }
+
+.created-logo{
+   // transform: translateY(25%);
+}
+
+.created-text{
+     transform: translateY(10%);
+     font-weight: 500;
+    display: block;
+ }
