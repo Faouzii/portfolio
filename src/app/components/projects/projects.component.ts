@@ -21,7 +21,7 @@ export class ProjectsComponent implements OnInit {
   projects : Project [] = [
     {
       reveresed : false,
-      logo : "/assets/img/anawcoloc-logo.png",
+      logo : "assets/img/anawcoloc-logo.png",
       title : "Ana w Coloc : Shared Expenses Management",
       description : "Ana w l'coloc is a 100% Moroccan application, 100% free and without ads, which allows you to manage the expenses shared between roommates, friends, family ... in order to facilitate daily life.",
       googlePlayUrl : "https://play.google.com/store/apps/details?id=me.faouzi.mobile.anawcoloc",
@@ -37,7 +37,7 @@ export class ProjectsComponent implements OnInit {
 
     {
       reveresed : true,
-      logo : "/assets/img/motivyme-logo.png",
+      logo : "assets/img/motivyme-logo.png",
       title : "Do it, Self Motivation Aapp",
       description : "Self motivation app that helps you achieve your goals, by scheduling your day-to-day / weekly tasks, and get rewarded for doing them",
       googlePlayUrl : "https://play.google.com/store/apps/details?id=my.awesome.doit.app.by.faouzi",
