@@ -2,8 +2,8 @@
     <div *ngFor="let job of jobs">
         <mat-step state="plus" completed>
             <ng-template matStepLabel>
-                <span class="fw-800 fs-17 primary">{{job.title}} @ <span class="medium">{{job.company}}</span></span><br>
-                <span class="fw-600 fs-13 primary"> Mars 2020 - Present</span>
+                <span class="fw-800 fs-20 primary">{{job.title}} @ <span class="medium">{{job.company}}</span></span><br>
+                <span class="fw-600 fs-16 primary"> Mars 2020 - Present</span>
 
             </ng-template>
 
@@ -11,7 +11,7 @@
             <div class="mb-1" *ngFor="let mission of job.missions">
                 <div class="mb-05" fxLayout="row wrap" fxLayoutAlign="none center">
                     <span fxShow.xs="false" class="material-icons primary md-24">check</span>
-                    <span class="fs-16 fw-500 primary" fxFlexAlign="end">{{mission.name}}</span>
+                    <span class="fs-17 fw-500 primary" fxFlexAlign="end">{{mission.name}}</span>
                 </div>
         
                 <mat-chip-list class="example-chip" cdkDropList cdkDropListOrientation="horizontal"

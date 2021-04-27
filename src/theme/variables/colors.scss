@@ -78,6 +78,11 @@ $app-accent: (
   )
 );
 
+
+$custom-typography: mat-typography-config($font-family: '"lato", sans-serif;');
+@include mat-core($custom-typography);
+
+
 $my-app-primary: mat-palette($app-primary);
 $my-app-accent:  mat-palette($mat-pink, 500, 900, A100);
 $my-app-warn:    mat-palette($mat-deep-orange);
