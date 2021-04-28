@@ -4,12 +4,14 @@ import { MatHorizontalStepper } from '@angular/material';
 import { Stack } from './models/stack';
 import {CdkDragDrop, moveItemInArray} from '@angular/cdk/drag-drop';
 import { Job } from './models/job';
+import { slideFadeAnimation } from './animations/slideFade';
 
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
+  animations: [slideFadeAnimation]
 })
 export class AppComponent implements OnInit, AfterViewInit {
 

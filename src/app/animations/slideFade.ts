@@ -49,7 +49,7 @@ export const slideFadeAnimation = [
              
             }),
             animate(
-              "900ms 100ms ease-out",
+              "1200ms 100ms ease-out",
               style({
                 transform: 'translateY(0%)',
                 opacity: 1.0,
