@@ -25,7 +25,7 @@ export class SocialService {
       hoverText : "LinkedIn",
     },
     {
-      url : "",
+      url : "https://stackoverflow.com",
       footerIconUrl : "https://cdn4.iconfinder.com/data/icons/miu-flat-social/60/stackoverflow-512.png",
       hoverText : "StackOverflow",
     },

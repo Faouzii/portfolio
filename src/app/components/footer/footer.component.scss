@@ -5,6 +5,11 @@
     height: 14vh;
     background-color: $primary;
     color: white;
+    
+}
+
+.created-box{
+    margin-left: 25px;
 }
 
 .created-logo{
@@ -25,3 +30,16 @@
      width: 30px;
      margin: 2px;
  }
+
+ @media only screen and (max-width: 959px) {
+    .footer{
+        padding: 0;
+        height: 30vh;
+    }
+    .social-icon-box{
+        margin: 0 0px 10px 0px;
+    }
+    .created-box{
+        margin-top: 25px;
+    }
+}
