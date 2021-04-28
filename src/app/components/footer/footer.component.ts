@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SocialService } from 'src/app/services/social.service';
 
 @Component({
   selector: 'footer',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
 
-  constructor() { }
+  socialContacts;
+
+  constructor(
+    private socialService : SocialService
+  ) { }
 
   ngOnInit() {
+    this.socialContacts = this.socialService.socialContacts;
+    console.log(this.socialContacts)
   }
 
+ 
 }

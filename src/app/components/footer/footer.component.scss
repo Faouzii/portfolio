@@ -2,17 +2,26 @@
 
 .footer{
     padding: 0;
-    height: 20vh;
+    height: 14vh;
     background-color: $primary;
     color: white;
 }
 
 .created-logo{
-   // transform: translateY(25%);
+   transform: translateY(15%);
 }
 
 .created-text{
-     transform: translateY(10%);
+     transform: translateY(-50%);
      font-weight: 500;
-    display: block;
+     margin: 10px;
+     display: inline-block;
+ }
+
+ .social-icon-box{
+     margin: 0 20px 10px 0px;
+ }
+ .social-icon {
+     width: 30px;
+     margin: 2px;
  }
