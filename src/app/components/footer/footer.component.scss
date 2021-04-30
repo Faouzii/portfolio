@@ -1,43 +1,55 @@
 @import "./../../../theme/variables/colors.scss";
 
 .footer{
-    padding: 0;
-    height: 30vh;
+    padding: 5vh 0 2vh 0;
+    height: 32vh;
     background-color: $primary;
     color: white;
     
 }
 
 .created-box{
-    margin-left: 25px;
+    
 }
 
 .created-logo{
-   transform: translateY(15%);
+    vertical-align: middle;
 }
 
 .created-text{
-     transform: translateY(-50%);
+    //vertical-align: middle;
      font-weight: 500;
      margin: 10px;
      display: inline-block;
  }
 
- .social-icon-box{
-     margin: 0 20px 10px 0px;
+ .social-icons-box{
+    // margin: 10px 0px
  }
  .social-icon {
      width: 30px;
+     height: 30px;
      margin: 2px;
  }
+
+ .social-icon-box{
+    margin: 0 10px;
+    padding: 10px;
+    background-color: lighten($color: $primary, $amount: 7);
+
+    &:hover{
+        background-color: lighten($color: $primary, $amount: 20);
+    }
+}
+
 
  @media only screen and (max-width: 959px) {
     .footer{
         padding: 0;
         height: 30vh;
     }
-    .social-icon-box{
-        margin: 0 0px 10px 0px;
+    .social-icons-box{
+        margin: 0 10px;
     }
     .created-box{
         margin-top: 25px;

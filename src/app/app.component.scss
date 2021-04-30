@@ -168,3 +168,45 @@ mat-chip{
 
 }
 
+
+.scroll-up-btn-box{
+  position: fixed;
+  top: 88vh;
+  left: 92vw;
+  opacity: 0;
+}
+
+.scroll-up-btn{
+  background-color: $medium;
+  border-radius: 1000px;
+  padding: 19px;
+  display: inline-block;
+}
+
+.scroll-up-icon{
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  margin-left: 3px;
+}
+
+.hide-scroll-up{
+  opacity: 1;
+  animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+  } 
+  100% {
+      opacity: 1;
+      transition-duration: 1.5s;
+  }
+}
+
+@media only screen and (max-width: 959px) {
+  .scroll-up-btn-box{
+      display: none;
+  }
+}

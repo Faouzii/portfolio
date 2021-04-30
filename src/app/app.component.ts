@@ -71,16 +71,22 @@ export class AppComponent implements OnInit, AfterViewInit {
 
   @HostListener('window:scroll', ['$event'])
   onWindowScroll(e) {
-     if (window.pageYOffset > 780) {
-       let element = document.getElementById('navbar');
-       element.classList.add('sticky');
+    let scrollUpbtn = document.getElementById('scroll-up-container');
+    let navbar = document.getElementById('navbar');
+
+     if (window.pageYOffset > window.innerHeight) {
+       navbar.classList.add('sticky');
+       scrollUpbtn.classList.add('hide-scroll-up'); 
+
+
      } else {
-      let element = document.getElementById('navbar');
-        element.classList.remove('sticky'); 
+      navbar.classList.remove('sticky'); 
+      scrollUpbtn.classList.remove('hide-scroll-up'); 
+
      }
 
     this.checkOffsetTop();
-
+    
   }
 
 

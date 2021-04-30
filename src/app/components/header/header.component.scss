@@ -26,14 +26,14 @@ a {
     position: fixed;
     top: 0;
     width: 100%;
-    animation: fadeIn 2s;
+    animation: expand 2s;
     z-index: 9;
   
   }
   
   
   
-  @keyframes fadeIn {
+  @keyframes expand {
     0% {
        
         max-height: 0;
