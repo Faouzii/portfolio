@@ -59,4 +59,22 @@ export const slideFadeAnimation = [
       ]),
       transition(':leave', [animate(500, style({ height: 0 }))]),
   ]),
+  trigger('slideFadeDown', [
+    transition(':enter', [
+        style({
+            transform: 'translateY(-150%)', 
+            opacity: 0.0,
+            position : "relative"
+          }),
+          animate(
+            "1200ms 00ms ease-out",
+            style({
+              transform: 'translateY(0%)',
+              opacity: 1.0,
+             
+            })
+          )
+    ]),
+    transition(':leave', [animate(500, style({ height: 0 }))]),
+]),
 ]
