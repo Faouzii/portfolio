@@ -60,34 +60,7 @@
   top: 80vh;
 }
 
-.show-more-btn{
-  padding: 12px 30px 12px 50px;
-  border: white 2px solid;
-  border-radius: 110px;
-  color : white;
-  font-weight: 500;
-  font-size: 18px;
- 
 
-  &:link{
-    text-decoration: none;
-  }
-  &:hover{
-    background-color:  white;
-    color: $primary;
-
-    transform: translateY(-30px);
-    box-shadow: 0 1em 2rem rgba(#000, 0.2);
-
-    .show-more-icon{
-      transform: rotate(90deg);
-    }
-  }
-  &:active{
-   transform: translateY(-1px);
-   box-shadow: 0 .5em 1rem rgba(#000, 0.2);
-  }
-}
 
 .show-more-icon{
   font-size: 38px;
@@ -182,7 +155,7 @@ mat-chip{
 .scroll-up-btn{
   background-color: $medium;
   border-radius: 1000px;
-  padding: 19px;
+  padding: 1vw;
   display: inline-block;
 }
 
@@ -190,7 +163,7 @@ mat-chip{
   color: white;
   font-size: 20px;
   font-weight: 600;
-  margin-left: 3px;
+  margin-left: 0.2vw;
 }
 
 .hide-scroll-up{
@@ -198,15 +171,7 @@ mat-chip{
   animation: fadeIn 1s;
 }
 
-@keyframes fadeIn {
-  0% {
-      opacity: 0;
-  } 
-  100% {
-      opacity: 1;
-      transition-duration: 1.5s;
-  }
-}
+
 
 @media only screen and (max-width: 959px) {
   .scroll-up-btn-box{
