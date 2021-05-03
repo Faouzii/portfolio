@@ -60,13 +60,21 @@
   top: 80vh;
 }
 
+.show-more-btn{
+  padding: 1.3vh 3vw 1.7vh 5vw;
+  border: white 2px solid;
+  border-radius: 110px;
+  color : white;
+  font-weight: 500;
+  font-size: 18px;
+}
 
 
 .show-more-icon{
   font-size: 38px;
   vertical-align: auto;
   position: relative;
-  top : 13px;
+  top : 14px;
   margin-left: 15px;
   transition: transform .3s ease-in-out;
 
@@ -99,12 +107,7 @@
  padding: 8vh 5vw;
 }
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-  .section-b,.section-a{
-    padding: 4vh 3vw;
-  }
-} 
+
 
 
 .example-headers-align .mat-expansion-panel-header-title,
@@ -174,7 +177,32 @@ mat-chip{
 
 
 @media only screen and (max-width: 959px) {
+
   .scroll-up-btn-box{
-      display: none;
+    position: fixed;
+    top: 88vh;
+    left: 82vw;
+  }
+
+  .scroll-up-btn{
+    background-color: $medium;
+    border-radius: 1000px;
+    padding: 10px;
+    display: inline-block;
+  }
+
+  .show-more-icon{
+    font-size: 38px;
+    vertical-align: auto;
+    position: relative;
+    top : 14px;
+    margin-left: -5px;
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .section-b,.section-a{
+    padding: 4vh 3vw;
   }
 }
