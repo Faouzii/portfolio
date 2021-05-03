@@ -35,7 +35,7 @@
   display: block;
   font-size: 55px;
   font-weight: 400;
-  letter-spacing: 35px;
+  letter-spacing: 15px;
 
 }
 
@@ -60,25 +60,7 @@
   top: 80vh;
 }
 
-.show-more-btn{
-  padding: 1.3vh 3vw 1.7vh 5vw;
-  border: white 2px solid;
-  border-radius: 110px;
-  color : white;
-  font-weight: 500;
-  font-size: 18px;
-}
 
-
-.show-more-icon{
-  font-size: 38px;
-  vertical-align: auto;
-  position: relative;
-  top : 14px;
-  margin-left: 15px;
-  transition: transform .3s ease-in-out;
-
-}
 
 
 
@@ -189,14 +171,6 @@ mat-chip{
     border-radius: 1000px;
     padding: 10px;
     display: inline-block;
-  }
-
-  .show-more-icon{
-    font-size: 38px;
-    vertical-align: auto;
-    position: relative;
-    top : 14px;
-    margin-left: -5px;
   }
 }
 

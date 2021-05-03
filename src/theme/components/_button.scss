@@ -1,23 +1,24 @@
-.show-more-btn{
-    padding: 12px 30px 12px 50px;
+@import "./../abstracts/variables";
+
+
+.fbtn-iconic{
+    //padding: 1.3vh 3vw 1.7vh 5vw;
+    padding: 13px 30px 17px 50px;
     border: white 2px solid;
     border-radius: 110px;
     color : white;
     font-weight: 500;
     font-size: 18px;
-   
-  
     &:link{
       text-decoration: none;
     }
     &:hover{
-      background-color:  white;
-      color: $primary;
-  
+      background-color:  rgb(255, 255, 255);
+      color:$primary !important;
       transform: translateY(-30px);
       box-shadow: 0 1em 2rem rgba(#000, 0.2);
-  
-      .show-more-icon{
+      font-weight: 600;
+      .fbtn-icon{
         transform: rotate(90deg);
       }
     }
@@ -26,3 +27,18 @@
      box-shadow: 0 .5em 1rem rgba(#000, 0.2);
     }
   }
+
+  .fbtn-icon{
+    font-size: 28px !important;
+    vertical-align: auto;
+    position: relative;
+    top : 10px;
+    margin-left: 10px;
+    transition: transform .3s ease-in-out;
+  }
+  
+@media only screen and (max-width: 959px) {
+  .fbtn-icon{
+   
+  }
+}
