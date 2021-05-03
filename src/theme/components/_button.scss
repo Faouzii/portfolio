@@ -1,6 +1,5 @@
 @import "./../abstracts/variables";
 
-
 .fbtn-iconic{
     //padding: 1.3vh 3vw 1.7vh 5vw;
     padding: 13px 30px 17px 50px;
@@ -26,16 +25,18 @@
      transform: translateY(-1px);
      box-shadow: 0 .5em 1rem rgba(#000, 0.2);
     }
+
+    .fbtn-icon{
+      font-size: 28px !important;
+      vertical-align: auto;
+      position: relative;
+      top : 10px;
+      margin-left: 10px;
+      transition: transform .3s ease-in-out;
+    }
   }
 
-  .fbtn-icon{
-    font-size: 28px !important;
-    vertical-align: auto;
-    position: relative;
-    top : 10px;
-    margin-left: 10px;
-    transition: transform .3s ease-in-out;
-  }
+
   
 @media only screen and (max-width: 959px) {
   .fbtn{
