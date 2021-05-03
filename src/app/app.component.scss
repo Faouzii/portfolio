@@ -172,6 +172,15 @@ mat-chip{
     padding: 10px;
     display: inline-block;
   }
+
+  .show-more-btn-box{
+    text-align:center;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 80vh;
+    width: 100vw;
+  }
 }
 
 /* Extra small devices (phones, 600px and down) */
