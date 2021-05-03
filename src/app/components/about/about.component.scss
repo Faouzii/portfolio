@@ -6,6 +6,10 @@
     padding: 5vh 0;
 }
 
+.title-box{
+  //  clip-path: polygon(0 0, 90% 0, 90% 0vh, 100% 100%, 0 100%);
+}
+
 @media only screen and (max-width: 600px) {
     .profile-picture{
         width : 150px

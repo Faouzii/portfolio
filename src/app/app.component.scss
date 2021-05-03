@@ -62,29 +62,14 @@
 }
 
 
-
-
-
-
-.scroll-up-btn{
-  background-color: $medium !important;
-}
-
-
-
-
-
-
-
-
 .section-a{
     background-color: $light-bg;
-    padding: 5vh 10vw;
+    padding: 8vh 10vw;
 }
 
 .section-b{
     background-color: lighten($color: $primary, $amount: 76%);
-    padding: 6vh 10vw;
+    padding: 8vh 10vw;
 }
 
 .main-flex-container{
@@ -138,14 +123,12 @@ mat-chip{
   top: 88vh;
   left: 92vw;
   opacity: 0;
-}
+  z-index: 122000 !important;
 
+  .scroll-up-btn{
+    background-color: $medium !important;
+  }
 
-.scroll-up-icon{
-  color: white;
-  font-size: 20px;
-  font-weight: 600;
-  margin-left: 0.2vw;
 }
 
 .hide-scroll-up{
@@ -179,7 +162,7 @@ mat-chip{
 
   .scroll-up-btn-box{
     position: fixed;
-    top: 88vh;
+    top: 85vh;
     left: 80vw;
   }
 }
