@@ -1,0 +1,29 @@
+
+.fbtn-cplx{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    //background: rgb(250, 195, 195);
+    width: fit-content;
+    padding: 2px 25px;
+    border : rgb(233, 95, 95) solid 1px;
+    color : white;
+    border-radius: 4px;
+    font-weight: 500;
+    &:link{
+        text-decoration: none;
+    }
+}
+
+.btn-img{
+    width: 25px;
+}
+
+.btn-text{
+    padding: 10px;
+}
+
+.bg-gray{
+    background-color: rgb(46, 46, 46);
+}

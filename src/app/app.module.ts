@@ -21,6 +21,7 @@ import { ContactComponent } from './components/contact/contact.component';
 import { TestComponent } from './components/test/test.component';
 import { AboutComponent } from './components/about/about.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { ButtonComponent } from './components/reusable/button/button.component';
 
 
 @NgModule({
@@ -35,6 +36,7 @@ import { FooterComponent } from './components/footer/footer.component';
     TestComponent,
     AboutComponent,
     FooterComponent,
+    ButtonComponent,
   ],
   imports: [
     BrowserModule,
