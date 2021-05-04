@@ -64,17 +64,14 @@
 
 .section-a{
     background-color: $light-bg;
-    padding: 8vh 10vw;
 }
 
 .section-b{
     background-color: lighten($color: $primary, $amount: 76%);
-    padding: 8vh 10vw;
 }
 
 .main-flex-container{
  height: inherit ;
- padding: 8vh 5vw;
 }
 
 
@@ -136,11 +133,27 @@ mat-chip{
   animation: fadeIn 1s;
 }
 
+.skewed-section {
+  background: linear-gradient(
+      78deg,lighten($color: $primary, $amount: 76%) 44.75%, 
+      rgb(255, 255, 255) 45%, rgb(255, 255, 255) calc(45% + 3px), 
+      rgb(246, 248, 255) calc(45% + 4px));
+  //display: flex;
+  padding: 22vh 10vw;
+}
+
 
 
 @media only screen and (max-width: 959px) {
 
-
+  .skewed-section {
+    background: linear-gradient(
+        358deg,lighten($color: $primary, $amount: 76%) 49.75%, 
+        rgb(255, 255, 255) 50%, rgb(255, 255, 255) calc(50% + 3px), 
+        rgb(237, 240, 248) calc(50% + 4px));
+    //display: flex;
+    padding: 8vh 3vw;
+  }
 
  
 
@@ -166,3 +179,6 @@ mat-chip{
     left: 80vw;
   }
 }
+
+
+
