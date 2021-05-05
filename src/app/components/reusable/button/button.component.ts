@@ -10,10 +10,12 @@ export class ButtonComponent implements OnInit {
   @ViewChild('github', {static : false}) githubBtn : HTMLElement;
 
 
+  btnType : "github";
 
   constructor( private renderer: Renderer2) { }
-
+ 
   ngOnInit() {
+
     this.renderer.setStyle(this.githubBtn, "width", "500px");
 
   }

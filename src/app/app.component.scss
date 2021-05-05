@@ -144,7 +144,7 @@ mat-chip{
 
   .skewed-section {
     background: linear-gradient(
-        358deg,lighten($color: $primary, $amount: 76%) 49.75%, 
+        358deg,lighten($color: $primary, $amount: 76%) 100%, 
         rgb(255, 255, 255) 50%, rgb(255, 255, 255) calc(50% + 3px), 
         #edf0f8 calc(50% + 4px));
     //display: flex;
