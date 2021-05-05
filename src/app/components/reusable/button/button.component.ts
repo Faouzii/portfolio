@@ -1,4 +1,4 @@
-import { Component, OnInit, Renderer2, ViewChild } from '@angular/core';
+import { Component, Input, OnInit, Renderer2, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'media-button',
@@ -7,16 +7,15 @@ import { Component, OnInit, Renderer2, ViewChild } from '@angular/core';
 })
 export class ButtonComponent implements OnInit {
 
-  @ViewChild('github', {static : false}) githubBtn : HTMLElement;
+  @Input() btnType : string;
+  @Input() iconName : string;
+  @Input() title : string;
 
 
-  btnType : "github";
 
   constructor( private renderer: Renderer2) { }
  
   ngOnInit() {
-
-    this.renderer.setStyle(this.githubBtn, "width", "500px");
 
   }
 

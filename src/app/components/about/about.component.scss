@@ -13,9 +13,24 @@
   //  clip-path: polygon(0 0, 90% 0, 90% 0vh, 100% 100%, 0 100%);
 }
 
+.btn-box{
+    margin-top: 10vh;
+}
+
+.description-box{
+    margin-top: 20vh;
+}
+
 @media only screen and (max-width: 600px) {
     .profile-picture{
         width : 150px
+    }
+}
+
+
+@media only screen and (max-width: 959px) {
+    .description-box{
+        margin-top: 5vh;
     }
 }
 

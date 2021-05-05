@@ -1,29 +1,75 @@
+@import "./../../../../theme/abstracts/variables";
+
 
 .fbtn-cplx{
 
     display: flex;
     justify-content: center;
     align-items: center;
-    //background: rgb(250, 195, 195);
     width: fit-content;
-    padding: 2px 25px;
-    border : rgb(233, 95, 95) solid 1px;
+    padding: 6px 20px;
+    margin: 3px;
     color : white;
     border-radius: 4px;
     font-weight: 500;
+    transition-duration: 0.8s;
+    font-size: 15px;
+    background: lighten($color: $primary, $amount: 15);
+    box-shadow: 0 4px 16px 0 rgba(0,0,0,0.2), 0 4px 18px 0 rgba(0,0,0,0.19);
+
     &:link{
         text-decoration: none;
     }
+    &:hover{
+        background: lighten($color: $primary, $amount: 30);
+        color: white;
+    }
+
+
+    .btn-img{
+        width: 22px;
+    }
+    
+    .btn-text{
+        padding: 10px;
+    }
+    
 }
 
-.btn-img{
-    width: 25px;
+
+
+
+
+
+@media only screen and (max-width: 959px) {
+    .fbtn-cplx{
+        width: 40vw;
+        padding: 4px 12px;
+        margin: 5px 0;
+    }
 }
 
-.btn-text{
-    padding: 10px;
+@media only screen and (max-width: 600px) {
+    .fbtn-cplx{
+        width: 85vw;
+        padding: 2px 12px;
+        margin: 5px 0;
+    }
 }
 
-.github{
-    background-color: rgb(46, 46, 46);
-}
+
+// .github{
+//     background-color: rgb(46, 46, 46);
+// }
+
+// .npm{
+//     background-color: rgb(233, 118, 118);
+// }
+
+// .linkedIn{
+//     background-color: rgb(72, 180, 252);
+// }
+
+// .stackoverflow{
+//     background-color: rgb(241, 170, 112);
+// }
