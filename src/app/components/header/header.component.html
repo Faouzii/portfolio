@@ -11,10 +11,13 @@
     <div fxFlex fxLayout fxLayoutAlign="end" fxHide.xs>
       <ul fxLayout fxLayoutGap="15px" class="navigation-items">
         <li>
-          <a (click)="sendDataToParent('jobs')" [ngClass]="{'active' : currentActiveTab === 'jobs'}">About</a>
+          <a (click)="sendDataToParent('about')" [ngClass]="{'active' : currentActiveTab === 'about'}">About</a>
         </li>
         <li>
-          <a  (click)="sendDataToParent('projects')" [ngClass]="{'active' : currentActiveTab === 'projects'}">Experience</a>
+          <a  (click)="sendDataToParent('jobs')" [ngClass]="{'active' : currentActiveTab === 'jobs'}">Experience</a>
+        </li>
+        <li>
+          <a  (click)="sendDataToParent('projects')" [ngClass]="{'active' : currentActiveTab === 'projects'}">Projects</a>
         </li>
         <li>
             <a  (click)="sendDataToParent('skills')" [ngClass]="{'active' : currentActiveTab === 'skills'}">Skills</a>
