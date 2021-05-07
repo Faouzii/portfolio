@@ -8,6 +8,7 @@ export class SocialService {
 
   constructor() { }
 
+  
   socialContacts : Social[] = [
     {
       url : "",
