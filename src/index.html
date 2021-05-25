@@ -168,7 +168,8 @@
                 'top': mathAssets.hwratio
                   * (tags[j].y - tags[j].h * per)
                   + mathAssets.halfHeight,
-                'opacity': tags[j].alpha,
+               /// 'opacity': tags[j].alpha,
+               'opacity': 2,
                 'font-size': options.fontMultiplier
                   * tags[j].alpha + 'px',
                 'z-index': Math.round(-tags[j].cz)
@@ -195,30 +196,30 @@
 
   <script type="text/javascript">
     var settings = {
-      //height of sphere container
-      height: 500,
-      //width of sphere container
-      width: 500,
-      //radius of sphere
-      radius: 150,
-      //rotation speed
-      speed: 0.5,
-      //sphere rotations slower
-      slower: 0.9,
-      //delay between update position
-      timer: 5,
-      //dependence of a font size on axis Z
-      fontMultiplier: 15,
-      //tag css stylies on mouse over
-      hoverStyle: {
+    //height of sphere container
+    height: 600,
+    //width of sphere container
+    width: 600,
+    //radius of sphere
+    radius: 150,
+    //rotation speed
+    speed: 0.5,
+    //sphere rotations slower
+    slower: 0.9,
+    //delay between update position
+    timer: 5,
+    //dependence of a font size on axis Z
+    fontMultiplier: 15,
+    //tag css stylies on mouse over
+    hoverStyle: {
         border: 'none',
         color: 'yellow'
-      },
-      //tag css stylies on mouse out
-      mouseOutStyle: {
+    },
+    //tag css stylies on mouse out
+    mouseOutStyle: {
         border: '',
         color: ''
-      }
+    }
     };
     $(document).ready(function () {
       $('#tagcloud').tagoSphere(settings);
