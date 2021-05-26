@@ -17,18 +17,30 @@ export class JobComponent implements OnInit {
   }
 
   jobs : Job [] = [
-    {title : "Full Stack Software Engineer", company : "EURAFRIC Information", date : "Nov 2020 - Current" , missions : [
-      {name : "mission 1 name", stacks : [
-        {name : "JAVA"},
-        {name: 'Angular 8'},
-        {name: 'Javascript'},
-        {name: 'SCSS'},
+    {title : "Full Stack Software Engineer", company : "EURAFRIC Information - Bank of africa", date : "Nov 2020 - Current" , missions : [
+      {name : "Etudes et développement des RESTful Web Service et des back-end APIs (Secteur Bancaire) ", stacks : [
+        {name : "JAVA 8"},
+        {name: 'Spring (core, boot, MVC, Data)'},
+        {name: 'Maven'},
+        {name: 'Git'},
+        {name: 'JWT'},
+        {name: 'SQL Server'}
       ]},
-      {name : "mission 1 name", stacks : [
-        {name : "JAVA"},
+      {name : "Conception et développement de la partie front-end", stacks : [
+        
         {name: 'Angular 8'},
         {name: 'Javascript'},
+        {name: 'NPM'},
         {name: 'SCSS'},
+        {name : "PrimeNG"},
+        {name : "HTML"},
+        {name: 'JWT'},
+        {name : "Git"}
+      ]},
+     
+      {name : "Développement des batches JAVA pour traitement des données massive ", stacks : [
+        {name : "JAVA 8"},
+        {name : "Git"}
       ]}
     ]},
 
@@ -36,6 +48,8 @@ export class JobComponent implements OnInit {
       {name : "Developed RESTFULL Web Services and back-end APIs.", stacks : [
         {name : "JAVA 8"},
         {name: 'Spring boot'},
+        {name: 'Maven'},
+        {name: 'JWT'},
         {name: 'MS SQL Server'},
       ]},
 
@@ -44,12 +58,14 @@ export class JobComponent implements OnInit {
         {name: 'Spring'},
         {name: 'Jasper Reports'},
         {name: 'MySQL'},
+        {name: 'JSP'},
         {name: 'Bootstrap'},
         {name: 'jQuery'},
       ]},
       {name : "Maintained existing applications to correct bugs, improuve performance and add new features.", stacks : [
-        {name : "JAVA 8"},
+        {name: "JAVA 8"},
         {name: 'Spring'},
+        {name: 'Struts 2'},
         {name: 'MySQL'},
         {name: 'Bootstrap'},
         {name: 'jQuery'},
@@ -87,3 +103,7 @@ export class JobComponent implements OnInit {
     
   }
 }
+
+
+//Etudes et développement des RESTful Web Service et des back-end APIs
+//Conception et développement from scratch des applications web Java (Signature éléctornique) 
