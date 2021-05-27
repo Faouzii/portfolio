@@ -104,6 +104,3 @@ export class JobComponent implements OnInit {
   }
 }
 
-
-//Etudes et développement des RESTful Web Service et des back-end APIs
-//Conception et développement from scratch des applications web Java (Signature éléctornique) 
