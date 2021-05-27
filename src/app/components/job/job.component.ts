@@ -142,37 +142,13 @@ export class JobComponent implements OnInit {
 }
 
 /*
-  des RESTful Web Services*
-  Oracle
 
-  massives*
 
-  SZ REST
-  Java 8, Spring (Boot, MVC, Data), JPA, SQL Server, Maven, Git, JWT, JSON
-
-  App signature
-  Java 8, Spring (Boot, MVC, Data), JPA, Jasper Report, MySQL, Maven, Git, JSP, Bootstrap, jQuery
-
-  maintain
-  Java 8, Spring, Struts 2, Hibernate, JPA, MySQL, JSP, Bootstrap 4, jQuery, JavaScript, Git
-
-  migration
-  Angular 4, Bootstrap 4, SCSS, NPM, Git
-
-  Java 8, Spring, JAX-RS, Jersey 2, Jackson, JSON, Hibernate, JPA, MySQL, JWT
 
   stage app
   Java 8, Spring boot, Innp Setup, Pascal
 
 
-  Ana w l'coloc est une application 100% Maroccain, 100% gratuite et sans pubs, qui permet de suivre et gérer les dépenses partagées entre les colocataires, les amis, la famille.. dans le but de faciliter la vie quotidienne.
-
-  Application de developement personelles base sur le principe Task - Reward, qui vous motive a attiendre vos objectives.
-  Apres avoir definir votre Reward, et pour chaque tache realise vous gagner des point pour unlocker.
-
-  Contribution Angular : ngx-timeago-pipe-fr
-  Une contribution open-source à la communauté Angular qui permet de formater les dates sous format timeago en français : Il y a 3 heures..
-  Le package est disponible sur NPM (npm install ngx-timeago-pipe-fr)
 
 
   */
