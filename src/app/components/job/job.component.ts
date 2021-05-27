@@ -91,7 +91,7 @@ export class JobComponent implements OnInit {
     ]},
 
 
-    {title : "Full Stack Software Engineer Intern", company : "SafeDemat", date : "Sep 2019 - Oct 2020", missions : [
+    {title : "Full Stack Software Engineer Intern", company : "SafeDemat", date : "Feb 2019 - Jul 2020", missions : [
       {name : "Developed Front-end and migrated an existing application from Struts 2 to Angular 2+ ", stacks : [
         {name : "Angular 4"},
         {name : "Boostrap 4"},
@@ -115,7 +115,7 @@ export class JobComponent implements OnInit {
       
     ]},
     
-    {title : "Summer Intern", company : "SafeDemat", date : "Sep 2019 - Oct 2020", missions : [
+    {title : "Summer Intern", company : "SafeDemat", date : "Jul 2018 - Aug 2018", missions : [
       {name : "Designed, created and implemented solution for migrating JAVA web applications based on Struts2 to Spring boot.", stacks : [
         {name : "Java 8"},
         {name: 'Spring'},
