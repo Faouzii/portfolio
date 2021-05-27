@@ -15,8 +15,16 @@
 
   ul {
     li {
-      a {
+     
         color: $primary;
-      }
+      
     }
+  }
+
+
+  .project-title{
+    color: $primary;
+    font-size: 28px;
+    font-weight: bolder;
+    margin-bottom: 10vh;
   }
