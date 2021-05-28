@@ -17,7 +17,7 @@ export class SocialService {
       hoverText : "Github",
     },
     {
-      url : "https://stackoverflow.com",
+      url : "https://stackoverflow.com/users/10152355/faouzi",
       footerIconUrl : "assets/icons/stackoverflow-white.png",
       hoverText : "StackOverflow",
     },
