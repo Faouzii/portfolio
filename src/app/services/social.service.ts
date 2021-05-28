@@ -12,7 +12,7 @@ export class SocialService {
   
   socialContacts : Social[] = [
     {
-      url : "",
+      url : "https://github.com/Faouzii/",
       footerIconUrl : "assets/icons/github-white.png",
       hoverText : "Github",
     },
@@ -23,12 +23,12 @@ export class SocialService {
     },
     
     {
-      url : "",
+      url : "https://linkedin.com/in/faouzi-mouad",
       footerIconUrl : "assets/icons/linkedin-white.png",
       hoverText : "LinkedIn",
     },
     {
-      url : "",
+      url : "https://www.npmjs.com/~faouzii",
       footerIconUrl : "assets/icons/npm-white.png",
       hoverText : "NPM",
     },

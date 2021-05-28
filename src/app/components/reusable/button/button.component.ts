@@ -10,7 +10,7 @@ export class ButtonComponent implements OnInit {
   @Input() btnType : string;
   @Input() iconName : string;
   @Input() title : string;
-
+  @Input() btnUrl : string;
 
 
   constructor( private renderer: Renderer2) { }
