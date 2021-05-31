@@ -7,8 +7,6 @@ import { Social } from '../models/social';
 export class SocialService {
 
   constructor() { }
-
-
   
   socialContacts : Social[] = [
     {
