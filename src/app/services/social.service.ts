@@ -30,6 +30,5 @@ export class SocialService {
       footerIconUrl : "assets/icons/npm-white.png",
       hoverText : "NPM",
     },
-   
   ]
 }
