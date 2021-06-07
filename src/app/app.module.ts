@@ -22,6 +22,8 @@ import { TestComponent } from './components/test/test.component';
 import { AboutComponent } from './components/about/about.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ButtonComponent } from './components/reusable/button/button.component';
+import { NgxPageScrollCoreModule } from 'ngx-page-scroll-core';
+import { NgxPageScrollModule } from 'ngx-page-scroll';
 
 
 @NgModule({
@@ -62,7 +64,9 @@ import { ButtonComponent } from './components/reusable/button/button.component';
     MatSidenavModule,
     MatFormFieldModule,
     FormsModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    NgxPageScrollCoreModule.forRoot({duration: 500}),
+    NgxPageScrollModule
   
   ],
   providers: [

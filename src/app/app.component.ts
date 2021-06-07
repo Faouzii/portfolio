@@ -5,6 +5,7 @@ import { Stack } from './models/stack';
 import {CdkDragDrop, moveItemInArray} from '@angular/cdk/drag-drop';
 import { Job } from './models/job';
 import { slideFadeAnimation } from './animations/slideFade';
+import { Subject } from 'rxjs';
 
 
 @Component({
@@ -25,6 +26,8 @@ export class AppComponent implements OnInit, AfterViewInit {
   public projectsOffset: Number = null;
   public skillsOffset: Number = null;
   public aboutOffset: Number = null;
+
+  navbarState:Subject<any> = new Subject();
 
   isLinear = false;
 
@@ -49,22 +52,17 @@ export class AppComponent implements OnInit, AfterViewInit {
   checkOffsetTop() {
     if (window.pageYOffset >= this.jobsOffset && window.pageYOffset < this.projectsOffset) {
       this.currentActive = "jobs";
-      console.log("jobsOffset")
 
     } else if (window.pageYOffset >= this.projectsOffset  && window.pageYOffset  < this.skillsOffset) {
       this.currentActive = "projects";
-      console.log("project")
     } else if (window.pageYOffset >= this.skillsOffset && window.pageYOffset < this.aboutOffset) {
       this.currentActive = "skills";
-      console.log("skillsOffset")
 
     } else if (window.pageYOffset >= this.aboutOffset) {
       this.currentActive = "about";
-      console.log("aboutOffset")
 
     } else {
       this.currentActive = "main";
-      console.log("22222222222")
     }
   }
   
@@ -77,11 +75,11 @@ export class AppComponent implements OnInit, AfterViewInit {
      if (window.pageYOffset > window.innerHeight) {
        navbar.classList.add('sticky');
        scrollUpbtn.classList.add('hide-scroll-up'); 
-
-
-     } else {
+       this.navbarState.next("showen");
+      } else {
       navbar.classList.remove('sticky'); 
       scrollUpbtn.classList.remove('hide-scroll-up'); 
+      this.navbarState.next("hidden");
 
      }
 

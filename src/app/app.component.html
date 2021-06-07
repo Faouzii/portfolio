@@ -3,10 +3,10 @@
   
 
 
- <section class="main-section" >
+ <section class="main-section" id="main">
 
   <div class="scroll-up-btn-box" id="scroll-up-container">
-    <button mat-fab class="scroll-up-btn" aria-label="Example icon button with a bookmark icon">
+    <button pageScroll href="#main" mat-fab class="scroll-up-btn" aria-label="Example icon button with a bookmark icon">
       <mat-icon>arrow_upward</mat-icon>
     </button>
   </div>
@@ -36,12 +36,12 @@
 
    
   </section>
-  <header (scrollToSection)="scroll($event)" [currentActiveTab]="currentActive"></header>
+  <header (scrollToSection)="scroll($event)" [currentActiveTab]="currentActive" [parentNavbarState]="navbarState"></header>
   
   <!--
     <app-test></app-test>
 -->
-<section class="skewed-section" #about >
+<section class="skewed-section" #about id="about">
   <!--<div class="h-center">
     <h1 class="primary fs-40" fxShow.xs="false">About</h1>
   </div>
@@ -51,7 +51,7 @@
   </div>
 </section>
 
-  <section class="section-a sections-padding" #jobs >
+  <section class="section-a sections-padding" #jobs id="jobs">
     <div class="h-centere">
       <h1 class="primary fs-33 mb-4">Experience</h1>
     </div>
@@ -61,7 +61,7 @@
   </section>
   
   
-  <section class="section-b sections-padding" #projects>
+  <section class="section-b sections-padding" #projects id="projects">
     <div class="h-centere">
       <h1 class="primary fs-33 mb-5">Personal Projects</h1>
     </div>
@@ -70,7 +70,7 @@
     </div>    
   </section>
   
-  <section class="section-a sections-padding" #skills>
+  <section class="section-a sections-padding" #skills id="skills">
     <div class="h-centere">
     <h2 class="primary fs-33 mb-4">Skills</h2>
   </div>
@@ -78,7 +78,7 @@
   </section>
 
 
-  <section class="section-b sections-padding" #contact>
+  <section class="section-b sections-padding" #contact id="contact">
     <div class="h-centere">
     <h2 class="primary fs-33 mb-4">Contact</h2>
   </div>
