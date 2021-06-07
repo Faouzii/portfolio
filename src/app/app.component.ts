@@ -20,12 +20,14 @@ export class AppComponent implements OnInit, AfterViewInit {
   @ViewChild('projects', {static : false}) projectsElement: ElementRef;
   @ViewChild('skills', {static : false}) skillsElement: ElementRef;
   @ViewChild('about', {static : false}) aboutElement: ElementRef;
+  @ViewChild('contact', {static : false}) contactElement: ElementRef;
 
   public currentActive = "main";
-  public jobsOffset: Number = null;
-  public projectsOffset: Number = null;
-  public skillsOffset: Number = null;
-  public aboutOffset: Number = null;
+  public jobsOffset: number = null;
+  public projectsOffset: number = null;
+  public skillsOffset: number = null;
+  public aboutOffset: number = null;
+  public contactOffset: number = null;
 
   navbarState:Subject<any> = new Subject();
 
@@ -38,10 +40,12 @@ export class AppComponent implements OnInit, AfterViewInit {
 
 
   ngAfterViewInit() {
-    this.jobsOffset = this.jobsElement.nativeElement.offsetTop -240;
-    this.projectsOffset = this.projectsElement.nativeElement.offsetTop - 240;
-    this.skillsOffset = this.skillsElement.nativeElement.offsetTop - 240;
-    this.aboutOffset = this.aboutElement.nativeElement.offsetTop -240;
+    this.aboutOffset = this.aboutElement.nativeElement.offsetTop ;
+
+    this.jobsOffset = this.jobsElement.nativeElement.offsetTop - 120;
+    this.projectsOffset = this.projectsElement.nativeElement.offsetTop  - 650;
+    this.skillsOffset = this.skillsElement.nativeElement.offsetTop + 220;
+    this.contactOffset = this.contactElement.nativeElement.offsetTop -100;
   }
 
   scrollToElement() {
@@ -50,15 +54,21 @@ export class AppComponent implements OnInit, AfterViewInit {
 
  // @HostListener('window:scroll', ['$event'])
   checkOffsetTop() {
-    if (window.pageYOffset >= this.jobsOffset && window.pageYOffset < this.projectsOffset) {
+    if (window.pageYOffset >= this.jobsOffset && window.pageYOffset < (this.projectsOffset  )) {
+      console.log("job")
       this.currentActive = "jobs";
 
     } else if (window.pageYOffset >= this.projectsOffset  && window.pageYOffset  < this.skillsOffset) {
+      
       this.currentActive = "projects";
-    } else if (window.pageYOffset >= this.skillsOffset && window.pageYOffset < this.aboutOffset) {
+
+    } else if (window.pageYOffset >= this.skillsOffset && window.pageYOffset < this.contactOffset) {
       this.currentActive = "skills";
 
-    } else if (window.pageYOffset >= this.aboutOffset) {
+    } else if (window.pageYOffset >= this.contactOffset ) {
+      this.currentActive = "contact";
+
+    } else if (window.pageYOffset >= this.aboutOffset && window.pageYOffset < this.jobsOffset ) {
       this.currentActive = "about";
 
     } else {
@@ -88,10 +98,10 @@ export class AppComponent implements OnInit, AfterViewInit {
   }
 
 
-   scroll(elmentId: string) {
-     const element = document.querySelector(elmentId)
-    if (element) element.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'start' } )
-}
+//    scroll(elmentId: string) {
+//      const element = document.querySelector(elmentId)
+//     if (element) element.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'start' } )
+// }
 
 
 }
