@@ -1,3 +1,5 @@
+@import "./../../../theme/abstracts/variables";
+
 
 //navbar css
 a {
@@ -39,8 +41,17 @@ mat-toolbar{
  border-radius: 0px;
 }
 
+.navigation-items{
+  li{
+    a:hover{
+      color: lighten($color: $medium, $amount: 16);
+    }
+  }
+}
 .active {
-  border-bottom: 2px rgb(255, 255, 255) solid;
+ // border-bottom: 2px rgb(255, 255, 255) solid;
+  color: $medium !important;
+  font-weight: 500;
 }
 
 .container{
