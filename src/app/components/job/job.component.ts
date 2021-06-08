@@ -125,7 +125,7 @@ export class JobComponent implements OnInit {
         {name: 'JSON'},
       ]},
 
-      {name : "Designed, created and implemented solution for migrating JAVA web applications based on Struts2 to Spring boot.", stacks : [
+      {name : "Created installable MS Windows service for automatic syncronization between client and remote server applications.", stacks : [
         {name : "Java 8"},
         {name: 'Spring boot'},
         {name: 'Inno Setup'},
