@@ -1,17 +1,17 @@
 <div *ngFor="let project of projects">
     <div #base flexLayout="row" fxLayout.lt-md="column" fxLayoutAlign="none center" fxLayoutGap="40px" fxLayoutGap.lt-md="0px" class="my-5">
-        <div *ngIf="!project.reveresed" fxFlex=" calc(40% - 40px)" fxFlex.lt-md="100" class="h-center">
+        <div *ngIf="!project.reveresed" fxFlex=" calc(40% - 40px)" fxFlex.lt-md="100" class="h-center hide-on-init" animateOnScroll  animationName="animate__animated animate__fadeInLeft">
             <img [src]="project.logo" alt="" class="project-logo">
             <br><br>
             <a mat-button [href]="project.googlePlayUrl" target="_blank"> <img src="assets/img/google-play.png" alt="" class="google-play-logo"></a>
         </div>
 
-        <div *ngIf="project.reveresed" fxHide fxShow.lt-md="true" fxFlex=" calc(40% - 40px)" fxFlex.lt-md="100" class="h-center">
+        <div *ngIf="project.reveresed" fxHide fxShow.lt-md="true" fxFlex=" calc(40% - 40px)" fxFlex.lt-md="100" class="h-center hide-on-init" animateOnScroll  animationName="animate__animated animate__fadeInRight">
             <img [src]="project.logo" alt="" class="project-logo"><br><br>
             <a mat-button [href]="project.googlePlayUrl" target="_blank"> <img src="assets/img/google-play.png" alt="" class="google-play-logo"></a>
         </div>
     
-        <div fxFlex="calc(60% - 40px)" fxFlex.lt-md="100" class="">
+        <div fxFlex="calc(60% - 40px)" fxFlex.lt-md="100" class="hide-on-init" animateOnScroll  animationName="animate__animated animate__fadeInUp">
             <p class="project-title">{{project.title}}</p>
             <p class="secondary fs-22"> {{project.description}}</p><br>
             <mat-chip-list class="example-chip" cdkDropList cdkDropListOrientation="horizontal"
@@ -22,7 +22,7 @@
             </mat-chip-list>
         </div>
 
-        <div *ngIf="project.reveresed" fxShow.lt-md="false" fxFlex=" calc(40% - 40px)" fxFlex.lt-md="100" class="h-center">
+        <div *ngIf="project.reveresed" fxShow.lt-md="false" fxFlex=" calc(40% - 40px)" fxFlex.lt-md="100" class="h-center hide-on-init" animateOnScroll  animationName="animate__animated animate__fadeInLeft">
             <img [src]="project.logo" alt="" class="project-logo"><br><br>
             <a mat-button [href]="project.googlePlayUrl" target="_blank"> <img src="assets/img/google-play.png" alt="" class="google-play-logo"></a>
         </div>

@@ -24,6 +24,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { ButtonComponent } from './components/reusable/button/button.component';
 import { NgxPageScrollCoreModule } from 'ngx-page-scroll-core';
 import { NgxPageScrollModule } from 'ngx-page-scroll';
+import { AnimateOnScrollModule } from 'ng2-animate-on-scroll';
 
 
 @NgModule({
@@ -66,7 +67,9 @@ import { NgxPageScrollModule } from 'ngx-page-scroll';
     FormsModule,
     MatSnackBarModule,
     NgxPageScrollCoreModule.forRoot({duration: 500}),
-    NgxPageScrollModule
+    NgxPageScrollModule,
+    AnimateOnScrollModule.forRoot()
+
   
   ],
   providers: [

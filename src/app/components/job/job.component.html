@@ -1,29 +1,30 @@
-<mat-vertical-stepper  #stepper>
-    <div *ngFor="let job of jobs">
-        <mat-step state="plus" completed>
-            <ng-template matStepLabel>
-                <span class="fw-800 fs-20 primary">{{job.title}} @ <span class="medium">{{job.company}}</span></span><br>
-                <span class="fw-600 fs-16 primary"> {{job.date}}</span>
-
-            </ng-template>
-
+    <mat-vertical-stepper  #stepper class="hide-on-init" animateOnScroll  animationName="animate__animated animate__fadeIn">
+        <div *ngFor="let job of jobs" >
+            <mat-step state="plus" completed>
+                <ng-template matStepLabel>
+                    <span class="fw-800 fs-20 primary">{{job.title}} @ <span class="medium">{{job.company}}</span></span><br>
+                    <span class="fw-600 fs-16 primary"> {{job.date}}</span>
+    
+                </ng-template>
+    
+                
+                <div class="mb-1" *ngFor="let mission of job.missions">
+                    <div class="mb-05" fxLayout="row wrap" fxLayoutAlign="none center">
+                        <span fxShow.xs="false" class="material-icons primary md-24">check</span>
+                        <span class="fs-17 fw-500 primary" fxFlexAlign="end">{{mission.name}}</span>
+                    </div>
             
-            <div class="mb-1" *ngFor="let mission of job.missions">
-                <div class="mb-05" fxLayout="row wrap" fxLayoutAlign="none center">
-                    <span fxShow.xs="false" class="material-icons primary md-24">check</span>
-                    <span class="fs-17 fw-500 primary" fxFlexAlign="end">{{mission.name}}</span>
+                    <mat-chip-list class="example-chip" cdkDropList cdkDropListOrientation="horizontal"
+                        (cdkDropListDropped)="drop($event)">
+                        <mat-chip class="example-box"  *ngFor="let stack of mission.stacks">
+                            {{stack.name}}
+                        </mat-chip>
+                    </mat-chip-list>
                 </div>
-        
-                <mat-chip-list class="example-chip" cdkDropList cdkDropListOrientation="horizontal"
-                    (cdkDropListDropped)="drop($event)">
-                    <mat-chip class="example-box"  *ngFor="let stack of mission.stacks">
-                        {{stack.name}}
-                    </mat-chip>
-                </mat-chip-list>
-            </div>
-        </mat-step>
-        <ng-template matStepperIcon="plus">
-            <mat-icon>add</mat-icon>
-        </ng-template>
-   </div>
-   </mat-vertical-stepper>
+            </mat-step>
+            <ng-template matStepperIcon="plus">
+                <mat-icon>add</mat-icon>
+            </ng-template>
+       </div>
+       </mat-vertical-stepper>
+
