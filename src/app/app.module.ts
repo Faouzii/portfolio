@@ -1,6 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import { HttpClientModule } from '@angular/common/http';
+
+
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -68,7 +71,8 @@ import { AnimateOnScrollModule } from 'ng2-animate-on-scroll';
     MatSnackBarModule,
     NgxPageScrollCoreModule.forRoot({duration: 500}),
     NgxPageScrollModule,
-    AnimateOnScrollModule.forRoot()
+    AnimateOnScrollModule.forRoot(),
+    HttpClientModule
 
   
   ],

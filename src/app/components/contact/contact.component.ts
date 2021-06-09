@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {FormControl, Validators} from '@angular/forms';
+import { NotificationService } from 'src/app/api-services/notification.service';
 import { Email } from 'src/app/models/email';
 
 @Component({
@@ -28,14 +29,21 @@ export class ContactComponent implements OnInit {
     Validators.required,
   ]);
 
-  constructor() { }
+  constructor(    
+    public notificationService : NotificationService
+    ) { }
 
-  ngOnInit() {
-   
+  ngOnInit( ) {
+    
   }
 
   submitMail(){
-    
+    this.notificationService.sendEmail(this.email).subscribe((response)=>{
+      alert("Message sent successfully")
+    },
+    err=>{
+      alert("Error occured while sending the email")
+    })
   }
 
 }

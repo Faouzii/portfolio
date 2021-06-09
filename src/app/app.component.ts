@@ -6,6 +6,7 @@ import {CdkDragDrop, moveItemInArray} from '@angular/cdk/drag-drop';
 import { Job } from './models/job';
 import { slideFadeAnimation } from './animations/slideFade';
 import { Subject } from 'rxjs';
+import { NotificationService } from './api-services/notification.service';
 
 
 @Component({
@@ -33,9 +34,14 @@ export class AppComponent implements OnInit, AfterViewInit {
 
   isLinear = false;
 
-  constructor() {}
+  constructor(
+    public notificationService : NotificationService
+  ) {}
 
   ngOnInit() {
+    this.notificationService.newVisitorNotification().subscribe((response) =>{
+      console.log(response);
+    })
   }
 
 
