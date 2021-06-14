@@ -38,10 +38,10 @@ export class ContactComponent implements OnInit {
 
   submitMail(){
     this.notificationService.sendEmail(this.email).subscribe((response)=>{
-      alert("Message sent successfully")
+     // alert("Message sent successfully")
     },
     err=>{
-      alert("Error occured while sending the email")
+      //alert("Error occured while sending the email")
     })
   }
 
