@@ -36,6 +36,7 @@ export class ContactComponent implements OnInit {
   ngOnInit( ) {
   }
 
+  
   submitMail(){
     this.notificationService.sendEmail(this.email).subscribe((response)=>{
      // alert("Message sent successfully")
