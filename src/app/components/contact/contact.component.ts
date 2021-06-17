@@ -47,7 +47,7 @@ export class ContactComponent implements OnInit {
   }
 
   
-  submitMail(contactForme :NgForm){
+  submitMail(contactForme){
    
     if (!this.contactForm.invalid) { 
       console.log('Valid login attempt - allow submission');
