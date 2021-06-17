@@ -6,7 +6,7 @@
   }
 
   .project-logo{
-    width: 30vw;
+    width: 25vw;
 }
 
 .project-title{
@@ -23,11 +23,42 @@
 
 @media only screen and (max-width: 600px) {
     .project-logo{
-        width : 80vw
+        width : 75vw !important
     }
     .project-title{
-      font-size: 25px;
-      font-weight: 500;
+      font-size: 21px;
+      font-weight: 600;
+      margin-top: 1vh;
+      margin-bottom: 6vh;
+      text-align: center;
     }
-  
+    .project-description{
+      font-size: 16px;
+      font-weight: 600;
+      margin-top: 4vh;
+    }
+    .google-play-logo{
+      width: 35vw;
+    }
+ }
+
+ @media screen and (max-width: 959px) {
+  .project-logo{
+    width : 38vw
+}
+  .project-title{
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 1vh;
+    margin-bottom: 6vh;
+    text-align: center;
+  }
+  .project-description{
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 4vh;
+  }
+  .google-play-logo{
+    width: 22vw;
+  }
 }
