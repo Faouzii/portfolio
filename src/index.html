@@ -192,13 +192,32 @@
   </style>
 
   <script type="text/javascript">
+    var ResponiveHeight;
+    var ResponiveWidth;
+    var ResponiveRadius;
+
+   if(window.innerWidth < 959 && window.innerWidth > 600){
+    ResponiveHeight = (window.innerWidth /1.8);
+    ResponiveWidth = (window.innerWidth /1.8);
+    ResponiveRadius = ResponiveWidth - 250;
+   }else if(window.innerWidth < 600){
+    ResponiveHeight = 300;
+    ResponiveWidth = 300;
+    ResponiveRadius = 120;
+   
+   }else{
+    ResponiveHeight = 500;
+    ResponiveWidth = 500;
+    ResponiveRadius = 200;
+   }
+
     var settings = {
     //height of sphere container
-    height: 420,
+    height: ResponiveHeight,
     //width of sphere container
-    width: 420,
+    width: ResponiveWidth,
     //radius of sphere
-    radius: 160,
+    radius: ResponiveRadius,
     //rotation speed
     speed: 0.3,
     //sphere rotations slower
