@@ -8,7 +8,7 @@ import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatButtonModule, MatCardModule, MatChipsModule, MatDatepickerModule, MatExpansionModule, MatFormFieldModule, MatGridListModule, MatGridTile, MatIconModule, MatInputModule, MatLabel, MatSidenavModule, MatSliderModule, MatSnackBarModule, MatStepperModule, MatToolbarModule } from '@angular/material';
+import { MatButtonModule, MatCardModule, MatChipsModule, MatDatepickerModule, MatExpansionModule, MatFormFieldModule, MatGridListModule, MatGridTile, MatIconModule, MatInputModule, MatLabel, MatSidenavModule, MatSliderModule, MatSnackBar, MatSnackBarModule, MatStepperModule, MatToolbarModule } from '@angular/material';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { FormBuilder, FormsModule, NgControl, ReactiveFormsModule } from '@angular/forms';
 import { CdkStepperModule, STEPPER_GLOBAL_OPTIONS } from '@angular/cdk/stepper';
@@ -72,7 +72,8 @@ import { AnimateOnScrollModule } from 'ng2-animate-on-scroll';
     NgxPageScrollCoreModule.forRoot({duration: 500}),
     NgxPageScrollModule,
     AnimateOnScrollModule.forRoot(),
-    HttpClientModule
+    HttpClientModule,
+    MatSnackBarModule
 
   
   ],

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {FormControl, Validators} from '@angular/forms';
+import {FormControl, FormGroup, NgForm, Validators} from '@angular/forms';
+import { MatSnackBar } from '@angular/material';
 import { NotificationService } from 'src/app/api-services/notification.service';
 import { Email } from 'src/app/models/email';
 
@@ -11,6 +12,8 @@ import { Email } from 'src/app/models/email';
 export class ContactComponent implements OnInit {
 
   email = {} as Email;
+  contactForm: FormGroup;
+
   
   emailFormControl = new FormControl('', [
     Validators.required,
@@ -30,20 +33,43 @@ export class ContactComponent implements OnInit {
   ]);
 
   constructor(    
-    public notificationService : NotificationService
+    public notificationService : NotificationService,
+    private snackBar: MatSnackBar
     ) { }
 
   ngOnInit( ) {
+    this.contactForm = new FormGroup({
+      email : this.emailFormControl,
+      fullname : this.fullnameFormControl,
+      subject : this.subjectFormControl,
+      body : this.bodyFormControl
+    })
   }
 
   
-  submitMail(){
-    this.notificationService.sendEmail(this.email).subscribe((response)=>{
-     // alert("Message sent successfully")
-    },
-    err=>{
-      //alert("Error occured while sending the email")
-    })
+  submitMail(contactForme :NgForm){
+   
+    if (!this.contactForm.invalid) { 
+      console.log('Valid login attempt - allow submission');
+      this.snackBar.open("Message sent succesfully, I'll get back to you ASAP !", "Okay",{
+        horizontalPosition:"left",
+        verticalPosition: "bottom"
+      });
+      contactForme.resetForm(contactForme.form.getRawValue)
+
+      this.notificationService.sendEmail(this.email).subscribe((response)=>{
+     
+      },
+      err=>{
+        //alert("Error occured while sending the email")
+      })
+  } else {
+      // Form input is not valid
+      this.contactForm.markAllAsTouched(); // Trigger validation across form
+      console.log('Invalid login attempt - block submission');
+  }
+   
+   
   }
 
 }

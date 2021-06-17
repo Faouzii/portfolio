@@ -1,6 +1,6 @@
 <div class="form-container hide-on-init" animateOnScroll  animationName="animate__animated animate__fadeIn">
-    <div fxLayout="row wrap" fxLayout.lt-md="column" fxLayoutAlign="center" fxLayoutGap.lt-md="0px" fxLayoutGap="32px">
-
+    <form #contactForme ="ngForm" [formGroup]="contactForm" (ngSubmit)="submitMail(contactForme)" fxLayout="row wrap" fxLayout.lt-md="column" fxLayoutAlign="center" fxLayoutGap.lt-md="0px" fxLayoutGap="32px">
+      
         <div fxFlex="0 1 calc(50% - 32px)" fxFlex.lt-md="100">
             <mat-form-field class="form-field">
                 <mat-label>Name</mat-label>
@@ -58,7 +58,7 @@
         </div>
 
         <div class="mt-2" fxFlex="0 1 calc(100% -62px)" fxFlex.lt-md="100" fxFlex.xs="100" fxLayoutAlign="end" fxLayoutAlign.xs="center">
-            <button mat-flat-button color="primary" class="submit-btn" (click)="submitMail()">Submit</button>
+            <button mat-flat-button color="primary" type="submit" class="submit-btn" >Submit</button>
         </div>
-    </div>
+    </form>
 </div>
