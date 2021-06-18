@@ -30,6 +30,8 @@ export class AppComponent implements OnInit, AfterViewInit {
   public aboutOffset: number = null;
   public contactOffset: number = null;
 
+  pageScrollOffset = 127;
+
   navbarState:Subject<any> = new Subject();
 
   isLinear = false;
@@ -92,11 +94,13 @@ export class AppComponent implements OnInit, AfterViewInit {
        navbar.classList.add('sticky');
        scrollUpbtn.classList.add('hide-scroll-up'); 
        this.navbarState.next("showen");
+       this.pageScrollOffset = 50;
       } else {
       navbar.classList.remove('sticky'); 
       scrollUpbtn.classList.remove('hide-scroll-up'); 
       this.navbarState.next("hidden");
-
+      this.pageScrollOffset = 120;
+     
      }
 
     this.checkOffsetTop();

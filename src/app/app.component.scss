@@ -208,3 +208,34 @@ mat-chip{
 
 
 
+
+mat-sidenav {
+  width: 94vw;
+  background: darken($color: $primary, $amount: 8) !important;
+  color: white !important;
+  padding: 7vh 0px;
+  text-align: center;
+  position: fixed;
+  top:0;
+  height: 100vh;
+  z-index: 200;
+}
+
+.menu-button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 19px 0;
+  border-bottom: white 1px solid;
+  //border-right: white 1px solid;
+  span{
+    font-size: 27px !important;
+    
+  }
+  mat-icon {
+      margin-right: 8px;
+  }
+
+}
+
