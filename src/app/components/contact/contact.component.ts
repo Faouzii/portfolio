@@ -13,7 +13,7 @@ export class ContactComponent implements OnInit {
 
   email = {} as Email;
   contactForm: FormGroup;
-
+  loading = false;
 
   emailFormControl = new FormControl('', [
     Validators.required,
@@ -50,7 +50,9 @@ export class ContactComponent implements OnInit {
   submitMail(contactForme) {
     console.log(this.email)
     if (!this.contactForm.invalid) {
+      this.loading = true;
       this.notificationService.sendEmail(this.email).subscribe((response) => {
+        this.loading = false;
         console.log('Valid login attempt - allow submission');
         this.snackBar.open("Message sent succesfully, I'll get back to you ASAP !", "Okay", {
           horizontalPosition: "left",
@@ -60,7 +62,8 @@ export class ContactComponent implements OnInit {
 
       },
         err => {
-          //alert("Error occured while sending the email")
+          this.loading = false;
+          alert("Error occured while sending the email")
         })
     } else {
       // Form input is not valid

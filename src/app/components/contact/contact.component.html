@@ -58,7 +58,7 @@
         </div>
 
         <div class="mt-2" fxFlex="0 1 calc(100% -62px)" fxFlex.lt-md="100" fxFlex.xs="100" fxLayoutAlign="end" fxLayoutAlign.xs="center">
-            <button mat-flat-button color="primary" type="submit" class="submit-btn" >Submit</button>
+            <button mat-flat-button color="primary"  [class.spinner]="loading" [disabled]="loading"  type="submit" class="submit-btn" >Submit</button>
         </div>
     </form>
 </div>

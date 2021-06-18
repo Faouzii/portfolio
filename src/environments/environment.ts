@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  backendAPIAddress: 'http://faouzii.herokuapp.com/'
+  backendAPIAddress: 'http://faouzii.herokuapp.coms/'
 };
 
 /*
