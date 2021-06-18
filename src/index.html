@@ -16,7 +16,7 @@
   <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
   <script>
 
-    ;(function ($) {
+    ; (function ($) {
       var tags;
       var mathAssets = {
         halfHeight: null,
@@ -165,8 +165,8 @@
                 'top': mathAssets.hwratio
                   * (tags[j].y - tags[j].h * per)
                   + mathAssets.halfHeight,
-               /// 'opacity': tags[j].alpha,
-               'opacity': 2,
+                /// 'opacity': tags[j].alpha,
+                'opacity': 2,
                 'font-size': options.fontMultiplier
                   * tags[j].alpha + 'px',
                 'z-index': Math.round(-tags[j].cz)
@@ -196,48 +196,48 @@
     var ResponiveWidth;
     var ResponiveRadius;
 
-   if(window.innerWidth < 959 && window.innerWidth > 600){
-    ResponiveHeight = (window.innerWidth /1.8);
-    ResponiveWidth = (window.innerWidth /1.8);
-    ResponiveRadius = ResponiveWidth - 250;
-   }else if(window.innerWidth < 600){
-    ResponiveHeight = 300;
-    ResponiveWidth = 300;
-    ResponiveRadius = 120;
-   
-   }else{
-    ResponiveHeight = 500;
-    ResponiveWidth = 500;
-    ResponiveRadius = 200;
-   }
+    if (window.innerWidth < 959 && window.innerWidth > 600) {
+      ResponiveHeight = (window.innerWidth / 1.8);
+      ResponiveWidth = (window.innerWidth / 1.8);
+      ResponiveRadius = ResponiveWidth - 250;
+    } else if (window.innerWidth < 600) {
+      ResponiveHeight = 300;
+      ResponiveWidth = 300;
+      ResponiveRadius = 120;
+
+    } else {
+      ResponiveHeight = 500;
+      ResponiveWidth = 500;
+      ResponiveRadius = 200;
+    }
 
     var settings = {
-    //height of sphere container
-    height: ResponiveHeight,
-    //width of sphere container
-    width: ResponiveWidth,
-    //radius of sphere
-    radius: ResponiveRadius,
-    //rotation speed
-    speed: 0.3,
-    //sphere rotations slower
-    slower: 0.9,
-    //delay between update position
-    timer: 5,
-    //dependence of a font size on axis Z
-    fontMultiplier: 15,
-    //tag css stylies on mouse over
-    hoverStyle: {
+      //height of sphere container
+      height: ResponiveHeight,
+      //width of sphere container
+      width: ResponiveWidth,
+      //radius of sphere
+      radius: ResponiveRadius,
+      //rotation speed
+      speed: 0.3,
+      //sphere rotations slower
+      slower: 0.9,
+      //delay between update position
+      timer: 5,
+      //dependence of a font size on axis Z
+      fontMultiplier: 15,
+      //tag css stylies on mouse over
+      hoverStyle: {
         border: 'none',
         color: 'gray',
         cursor: 'pointer',
 
-    },
-    //tag css stylies on mouse out
-    mouseOutStyle: {
+      },
+      //tag css stylies on mouse out
+      mouseOutStyle: {
         border: '',
         color: ''
-    }
+      }
     };
     $(document).ready(function () {
       $('#tagcloud').tagoSphere(settings);

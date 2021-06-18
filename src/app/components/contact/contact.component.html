@@ -35,10 +35,10 @@
         <div fxFlex="0 1 calc(100% - 32px)" fxFlex.lt-md="100">
             <mat-form-field class="form-field">
                 <mat-label>Subject</mat-label>
-                <input matInput type="text" [(ngModel)]="email.subjet" [formControl]="subjectFormControl"
+                <input matInput type="text" [(ngModel)]="email.subject" [formControl]="subjectFormControl"
                     placeholder="How can I help you ?">
-                <button mat-button *ngIf="email.subjet" matSuffix mat-icon-button aria-label="Clear"
-                    (click)="email.subjet=''">
+                <button mat-button *ngIf="email.subject" matSuffix mat-icon-button aria-label="Clear"
+                    (click)="email.subject=''">
                     <mat-icon>close</mat-icon>
                 </button>
                 <mat-error *ngIf="subjectFormControl.hasError('required')">

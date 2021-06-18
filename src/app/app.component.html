@@ -1,36 +1,29 @@
-
 <div (scroll)="onWindowScroll($event);">
-  
  <section class="main-section" id="main">
-
   <div class="scroll-up-btn-box" id="scroll-up-container">
     <button pageScroll href="#main" mat-fab class="scroll-up-btn" aria-label="Example icon button with a bookmark icon">
       <mat-icon>arrow_upward</mat-icon>
     </button>
   </div>
-
 <!--
    <div class="logo-box">
      <img src="../assets/img/logo.png" class="logo" alt="">
    </div>
 -->
-   <div class="heading-box">
+  <div class="heading-box">
     <h1 class="app-heading"  [@slideFadeUp]>
       <span class="app-heading-main">Hi, I'm Faouzi</span>
       <span class="app-heading-sub mt-2">I build web and mobile apps</span>
     </h1>
-   </div>
-
-   <div class="show-more-btn-box animate__animated animate__fadeIn " >
+  </div>
+  <div class="show-more-btn-box animate__animated animate__fadeIn " >
     <a class="fbtn-iconic" pageScroll href="#about">Show more   <mat-icon class="fbtn-icon">chevron_right</mat-icon>
       </a>
-   </div>
-
-   <div class="note-box animate__animated animate__fadeIn" >
+  </div>
+  <div class="note-box animate__animated animate__fadeIn" >
     <span class="note-text" style="display: block;">( Please note that this version is still in developement )</span>
-   </div>
+  </div>
    <br>
-   
   </section>
   <header  [currentActiveTab]="currentActive" [parentNavbarState]="navbarState"></header>
   
@@ -46,7 +39,6 @@
     <about></about>
   </div>
 </section>
-
   <section class="section-a sections-padding" #jobs id="jobs">
     <div class="h-centere">
       <h1 class="primary fs-33 mb-4">Experience</h1>
@@ -55,8 +47,7 @@
       <jobs></jobs>
     </div>
   </section>
-  
-  
+   
   <section class="section-b sections-padding" #projects id="projects">
     <div class="h-centere">
       <h1 class="primary fs-33 mb-5">Personal Projects</h1>
@@ -65,24 +56,19 @@
       <projects></projects>
     </div>    
   </section>
-  
   <section class="section-a sections-padding" #skills id="skills">
     <div class="h-centere">
     <h2 class="primary fs-33 mb-4">Skills</h2>
   </div>
     <skills></skills>
   </section>
-
-
   <section class="section-b sections-padding" #contact id="contact">
     <div class="h-centere">
     <h2 class="primary fs-33 mb-4">Contact</h2>
   </div>
     <contact></contact>
   </section>
-
   <section>
     <footer></footer>
-
   </section>
 </div>
