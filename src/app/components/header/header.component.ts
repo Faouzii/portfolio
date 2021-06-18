@@ -41,7 +41,7 @@ export class HeaderComponent implements OnInit {
     this.parentNavbarState.unsubscribe();
   }
 
-  public onToggleSidenav = () => {
+  public openSideNav = () => {
     this.sidenavToggle.emit();
   }
 

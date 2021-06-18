@@ -34,6 +34,8 @@ export class AppComponent implements OnInit, AfterViewInit {
 
   navbarState:Subject<any> = new Subject();
 
+  
+
   isLinear = false;
 
   constructor(

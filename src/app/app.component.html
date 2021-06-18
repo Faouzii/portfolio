@@ -1,23 +1,28 @@
 <mat-sidenav-container>
-  <mat-sidenav #sidenav="matSidenav" class="mat-elevation-z8">
-    <button mat-button class="menu-button" pageScroll href="#main" (click)="sidenav.toggle()" [pageScrollOffset]="pageScrollOffset">
+  <mat-sidenav #sidenav="matSidenav" class="mat-elevation-z8" fxHide fxShow.lt-sm="true">
+    <button mat-button class="menu-button" pageScroll href="#main" (click)="sidenav.toggle()" [pageScrollOffset]="pageScrollOffset"  
+    [ngClass]="{'active' : currentActive === 'about'}">
       <!--<mat-icon>Home</mat-icon>-->
-      <span>Home</span>
+      <span>About</span>
   </button>
   <mat-divider></mat-divider>
 
-  <button mat-button class="menu-button" pageScroll href="#jobs" (click)="sidenav.toggle()" [pageScrollOffset]="pageScrollOffset">
+  <button mat-button class="menu-button" pageScroll href="#jobs" (click)="sidenav.toggle()" [pageScrollOffset]="pageScrollOffset"
+  [ngClass]="{'active' : currentActive === 'jobs'}">
       <span>Experience</span>
   </button>
-  <button mat-button class="menu-button" pageScroll href="#projects" (click)="sidenav.toggle()" [pageScrollOffset]="pageScrollOffset">
+  <button mat-button class="menu-button" pageScroll href="#projects" (click)="sidenav.toggle()" [pageScrollOffset]="pageScrollOffset"
+  [ngClass]="{'active' : currentActive === 'projects'}">
       <span>Personal Projects</span>
   </button>
 
-  <button mat-button class="menu-button" pageScroll href="#skills" (click)="sidenav.toggle()" [pageScrollOffset]="pageScrollOffset">
+  <button mat-button class="menu-button" pageScroll href="#skills" (click)="sidenav.toggle()" [pageScrollOffset]="pageScrollOffset"
+  [ngClass]="{'active' : currentActive === 'skills'}">
     <span>Skills</span>
 </button>
 
-  <button mat-button class="menu-button" pageScroll href="#contact" (click)="sidenav.toggle()" [pageScrollOffset]="pageScrollOffset">
+  <button mat-button class="menu-button" pageScroll href="#contact" (click)="sidenav.toggle()" [pageScrollOffset]="pageScrollOffset"
+  [ngClass]="{'active' : currentActive === 'contact'}">
       <span>Contact</span>
   </button>
   </mat-sidenav>
@@ -50,7 +55,7 @@
            </div>
             <br>
            </section>
-           <header (click)="sidenav.toggle()" [currentActiveTab]="currentActive" [parentNavbarState]="navbarState"></header>
+           <header (sidenavToggle)="sidenav.toggle()" [currentActiveTab]="currentActive" [parentNavbarState]="navbarState"></header>
            
            <!--
              <app-test></app-test>
