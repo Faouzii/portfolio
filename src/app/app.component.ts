@@ -43,9 +43,7 @@ export class AppComponent implements OnInit, AfterViewInit {
   ) {}
 
   ngOnInit() {
-    this.notificationService.newVisitorNotification().subscribe((response) =>{
-      console.log(response);
-    })
+    this.notificationService.newVisitorNotification();
   }
 
 
