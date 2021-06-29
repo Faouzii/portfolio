@@ -17,8 +17,6 @@ export class NotificationService {
   ) {
     this.backendAPI = environment.backendAPIAddress;
   }
-
-
   public newVisitorNotification() {
     return this.httpClient.get('https://jsonip.com/').subscribe((data : Ipdata)=> {
       console.log(data)
