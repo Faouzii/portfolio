@@ -23,7 +23,6 @@ export class NotificationService {
        this.httpClient.get(this.backendAPI + 'new-visite/'+ data.ip).subscribe((resp)=>{})
 
     });
-
   }
 
   public sendEmail(email: Email) {
