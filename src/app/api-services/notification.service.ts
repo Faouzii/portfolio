@@ -19,7 +19,7 @@ export class NotificationService {
   }
   public newVisitorNotification() {
     return this.httpClient.get('https://jsonip.com/').subscribe((data : Ipdata)=> {
-      console.log(data)
+      console.log(data.ip)
        this.httpClient.get(this.backendAPI + 'new-visite/'+ data.ip).subscribe((resp)=>{})
 
     });
@@ -29,3 +29,4 @@ export class NotificationService {
     return this.httpClient.post(this.backendAPI + 'mails', email);
   }
 }
+
