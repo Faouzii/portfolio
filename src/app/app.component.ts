@@ -46,6 +46,7 @@ export class AppComponent implements OnInit, AfterViewInit {
     this.notificationService.newVisitorNotification();
   }
 
+  
   ngAfterViewInit() {
     this.aboutOffset = this.aboutElement.nativeElement.offsetTop ;
 
