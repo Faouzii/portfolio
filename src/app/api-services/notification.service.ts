@@ -24,7 +24,6 @@ export class NotificationService {
 
     });
   }
-
   public sendEmail(email: Email) {
     return this.httpClient.post(this.backendAPI + 'mails', email);
   }
