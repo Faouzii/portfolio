@@ -28,5 +28,3 @@ export class NotificationService {
     return this.httpClient.post(this.backendAPI + 'mails', email);
   }
 }
-
-
