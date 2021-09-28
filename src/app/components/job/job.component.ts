@@ -140,15 +140,3 @@ export class JobComponent implements OnInit {
     
   }
 }
-
-/*
-
-
-
-  stage app
-  Java 8, Spring boot, Innp Setup, Pascal
-
-
-
-
-  */
