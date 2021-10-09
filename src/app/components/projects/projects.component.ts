@@ -48,7 +48,21 @@ export class ProjectsComponent implements OnInit {
         {name : "Spring boot"},
         {name : "PostgreSQL"},
       ]
-    }
+    },
+    {
+      reveresed : false,
+      logo : "assets/img/weebma.png",
+      title : "Weebma : Online Stores creator",
+      description : "Weebma is a SaaS that helps its customers who want to take thier businesses to the next level and bring it to the digital world.",
+      googlePlayUrl : "https://www.weebma.com",
+      stacks : [
+        {name : "Angular 8"},
+        {name : "Java 8"},
+        {name : "Spring boot"},
+        {name : "MySQL"},
+
+      ]
+    },
   ]
 
 
