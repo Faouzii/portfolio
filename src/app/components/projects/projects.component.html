@@ -4,13 +4,21 @@
             <p class="project-title" fxHide fxShow.lt-md="true" >{{project.title}}</p>
             <img [src]="project.logo" alt="" class="project-logo">
             <br><br>
-            <a mat-button [href]="project.googlePlayUrl" target="_blank"> <img src="assets/img/google-play.png" alt="" class="google-play-logo"></a>
+            <a mat-button [href]="project.url" target="_blank"> 
+                <img *ngIf="project.isMobileApp" src="assets/img/google-play.png" alt="" class="google-play-logo">
+                <button *ngIf="project.isWebsite" mat-flat-button color="primary" class="sm-btn" >Check out !</button>
+
+            </a>
         </div>
 
         <div *ngIf="project.reveresed" fxHide fxShow.lt-md="true" fxFlex=" calc(40% - 40px)" fxFlex.lt-md="100" class="h-center hide-on-init" animateOnScroll  animationName="animate__animated animate__fadeInRight">
             <p class="project-title"  >{{project.title}}</p>
             <img [src]="project.logo" alt="" class="project-logo"><br><br>
-            <a mat-button [href]="project.googlePlayUrl" target="_blank"> <img src="assets/img/google-play.png" alt="" class="google-play-logo"></a>
+            <a mat-button [href]="project.url" target="_blank"> 
+                <img *ngIf="project.isMobileApp" src="assets/img/google-play.png" alt="" class="google-play-logo">
+                <button *ngIf="project.isWebsite" mat-flat-button color="primary" class="sm-btn" >Check out !</button>
+
+            </a>
         </div>
     
         <div fxFlex="calc(60% - 40px)" fxFlex.lt-md="100" class="hide-on-init" animateOnScroll  animationName="animate__animated animate__fadeInUp">
@@ -26,7 +34,12 @@
 
         <div *ngIf="project.reveresed" fxShow.lt-md="false" fxFlex=" calc(40% - 40px)" fxFlex.lt-md="100" class="h-center hide-on-init" animateOnScroll  animationName="animate__animated animate__fadeInLeft">
             <img [src]="project.logo" alt="" class="project-logo"><br><br>
-            <a mat-button [href]="project.googlePlayUrl" target="_blank"> <img src="assets/img/google-play.png" alt="" class="google-play-logo"></a>
+            <a mat-button [href]="project.url" target="_blank"> 
+                <img *ngIf="project.isMobileApp" src="assets/img/google-play.png" alt="" class="google-play-logo">
+                <button *ngIf="project.isWebsite" mat-flat-button color="primary" class="sm-btn" >Check out !</button>
+
+            </a>
+            
         </div>
     </div>
     <br>

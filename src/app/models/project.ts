@@ -5,6 +5,8 @@ export interface Project {
     logo : string;
     title : string;
     description : string;
-    googlePlayUrl : string;
+    url : string;
     stacks : Stack[];
+    isMobileApp ?: boolean;
+    isWebsite ?: boolean;
 }

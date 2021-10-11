@@ -36,10 +36,26 @@
     }
   }
 
+  .sm-btn{
+    width: 13vw!important;
+    height: 58px!important;
+    min-width: unset!important;
+  }
+
 
   
 @media only screen and (max-width: 959px) {
   .fbtn{
    width: 100vw;
   }
+
+  .sm-block-btn{
+    width: 93vw!important;
+    height: 6vh!important;
+    min-width: unset!important;
+  }
+  .sm-btn{
+    width: 53vw!important;
+  }
+  
 }
