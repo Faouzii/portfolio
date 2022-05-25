@@ -59,7 +59,6 @@ export class ContactComponent implements OnInit {
           verticalPosition: "bottom"
         });
         contactForme.resetForm(contactForme.form.getRawValue)
-
       },
         err => {
           this.loading = false;
